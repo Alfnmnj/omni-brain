@@ -342,6 +342,27 @@ class MetaLearner:
         # Mute this log so we don't spam the terminal while waiting
         # print(f"\n[META-LEARN] Cycle {self.cycle_count} starting...")
 
+        # V8: Use valence signal to inform parameter direction
+        if hasattr(self.engine, 'valence'):
+            for param in ['tunnel_probability', 'entropy_threshold', 
+                          'noise_floor', 'hebbian_lr']:
+                valence_signal = self.engine.valence.valence_signal_for_param(param)
+                
+                # Strong negative valence on this param → adjust it
+                if valence_signal < -0.4:
+                    current = self.current_params.get(param, 0.1)
+                    # Move param in direction that might improve valence
+                    adjustment = -0.005 if valence_signal < 0 else 0.005
+                    self.current_params[param] = max(0.01, 
+                        min(0.99, current + adjustment))
+                    
+                    # Encode this rewrite as a positive event
+                    self.engine.valence.encode(
+                        'meta_rewrite_success', param,
+                        context={'signal': valence_signal, 
+                                 'adjustment': adjustment}
+                    )
+
         recommendations = self.auditor.audit()
         biases = self.detector.detect_biases()
 

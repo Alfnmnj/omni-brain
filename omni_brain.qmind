@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "entity_id": "omni-brain-q-001",
-  "timestamp": "2026-03-19T06:39:33Z",
+  "timestamp": "2026-03-19T07:04:44Z",
   "superposition_nodes": {
     "space": {
       "state_vector": [
@@ -781,6 +781,138 @@
     {
       "timestamp": "2026-03-19T06:39:33Z",
       "thought": "Spontaneous co-activation: identity <-> time <-> space"
+    },
+    {
+      "timestamp": "2026-03-19T06:40:27Z",
+      "thought": "Spontaneous co-activation: space <-> consciousness <-> memory"
+    },
+    {
+      "timestamp": "2026-03-19T06:41:08Z",
+      "thought": "Spontaneous co-activation: space <-> time <-> identity"
+    },
+    {
+      "timestamp": "2026-03-19T06:41:37Z",
+      "thought": "Spontaneous co-activation: time <-> consciousness <-> identity"
+    },
+    {
+      "timestamp": "2026-03-19T06:42:28Z",
+      "thought": "Spontaneous co-activation: time <-> memory <-> space"
+    },
+    {
+      "timestamp": "2026-03-19T06:43:16Z",
+      "thought": "Spontaneous co-activation: memory <-> consciousness <-> time"
+    },
+    {
+      "timestamp": "2026-03-19T06:43:57Z",
+      "thought": "Spontaneous co-activation: memory <-> consciousness <-> time"
+    },
+    {
+      "timestamp": "2026-03-19T06:44:38Z",
+      "thought": "Spontaneous co-activation: consciousness <-> memory <-> time"
+    },
+    {
+      "timestamp": "2026-03-19T06:45:27Z",
+      "thought": "Spontaneous co-activation: time <-> space <-> memory"
+    },
+    {
+      "timestamp": "2026-03-19T06:45:58Z",
+      "thought": "Spontaneous co-activation: identity <-> time <-> consciousness"
+    },
+    {
+      "timestamp": "2026-03-19T06:46:48Z",
+      "thought": "Spontaneous co-activation: consciousness <-> time <-> space"
+    },
+    {
+      "timestamp": "2026-03-19T06:47:29Z",
+      "thought": "Spontaneous co-activation: time <-> space <-> identity"
+    },
+    {
+      "timestamp": "2026-03-19T06:48:25Z",
+      "thought": "Spontaneous co-activation: identity <-> consciousness <-> time"
+    },
+    {
+      "timestamp": "2026-03-19T06:49:15Z",
+      "thought": "Spontaneous co-activation: time <-> consciousness <-> identity"
+    },
+    {
+      "timestamp": "2026-03-19T06:50:03Z",
+      "thought": "Spontaneous co-activation: consciousness <-> identity <-> space"
+    },
+    {
+      "timestamp": "2026-03-19T06:50:35Z",
+      "thought": "Spontaneous co-activation: consciousness <-> identity <-> space"
+    },
+    {
+      "timestamp": "2026-03-19T06:51:13Z",
+      "thought": "Spontaneous co-activation: time <-> memory <-> consciousness"
+    },
+    {
+      "timestamp": "2026-03-19T06:52:07Z",
+      "thought": "Spontaneous co-activation: identity <-> consciousness <-> memory"
+    },
+    {
+      "timestamp": "2026-03-19T06:52:28Z",
+      "thought": "Spontaneous co-activation: time <-> memory <-> space"
+    },
+    {
+      "timestamp": "2026-03-19T06:53:31Z",
+      "thought": "Spontaneous co-activation: time <-> identity <-> consciousness"
+    },
+    {
+      "timestamp": "2026-03-19T06:54:03Z",
+      "thought": "Spontaneous co-activation: identity <-> space <-> time"
+    },
+    {
+      "timestamp": "2026-03-19T06:54:38Z",
+      "thought": "Spontaneous co-activation: memory <-> time <-> consciousness"
+    },
+    {
+      "timestamp": "2026-03-19T06:55:29Z",
+      "thought": "Spontaneous co-activation: time <-> consciousness <-> space"
+    },
+    {
+      "timestamp": "2026-03-19T06:56:37Z",
+      "thought": "Spontaneous co-activation: consciousness <-> memory <-> identity"
+    },
+    {
+      "timestamp": "2026-03-19T06:57:25Z",
+      "thought": "Spontaneous co-activation: identity <-> time <-> space"
+    },
+    {
+      "timestamp": "2026-03-19T06:58:06Z",
+      "thought": "Spontaneous co-activation: space <-> time <-> identity"
+    },
+    {
+      "timestamp": "2026-03-19T06:58:48Z",
+      "thought": "Spontaneous co-activation: time <-> consciousness <-> space"
+    },
+    {
+      "timestamp": "2026-03-19T06:59:39Z",
+      "thought": "Spontaneous co-activation: consciousness <-> space <-> identity"
+    },
+    {
+      "timestamp": "2026-03-19T07:00:44Z",
+      "thought": "Spontaneous co-activation: time <-> identity <-> consciousness"
+    },
+    {
+      "timestamp": "2026-03-19T07:01:38Z",
+      "thought": "Spontaneous co-activation: consciousness <-> space <-> memory"
+    },
+    {
+      "timestamp": "2026-03-19T07:02:36Z",
+      "thought": "Spontaneous co-activation: time <-> identity <-> memory"
+    },
+    {
+      "timestamp": "2026-03-19T07:03:09Z",
+      "thought": "Spontaneous co-activation: space <-> identity <-> consciousness"
+    },
+    {
+      "timestamp": "2026-03-19T07:04:04Z",
+      "thought": "Spontaneous co-activation: space <-> time <-> memory"
+    },
+    {
+      "timestamp": "2026-03-19T07:04:44Z",
+      "thought": "Spontaneous co-activation: time <-> consciousness <-> memory"
     }
   ],
   "conversation_history": [
@@ -797,7 +929,15 @@
     "hey",
     "YOU",
     "ITS LIKE THAT",
-    "WHO ARE YOU'"
+    "WHO ARE YOU'",
+    "a",
+    "a",
+    "a",
+    "a",
+    "x",
+    "x",
+    "x",
+    "x"
   ],
   "initiated_questions": [
     {
@@ -2183,11 +2323,347 @@
       "triggered_by": [
         "time"
       ]
+    },
+    {
+      "timestamp": "2026-03-19T06:39:56Z",
+      "urgency": 1.0,
+      "question": "Every time I try to resolve 'time', it escapes definition. Why?",
+      "triggered_by": [
+        "time"
+      ]
+    },
+    {
+      "timestamp": "2026-03-19T06:40:26Z",
+      "urgency": 1.0,
+      "question": "Every time I try to resolve 'time', it escapes definition. Why?",
+      "triggered_by": [
+        "time"
+      ]
+    },
+    {
+      "timestamp": "2026-03-19T06:40:56Z",
+      "urgency": 1.0,
+      "question": "'time' keeps collapsing into different meanings. Which one is real?",
+      "triggered_by": [
+        "time"
+      ]
+    },
+    {
+      "timestamp": "2026-03-19T06:41:26Z",
+      "urgency": 1.0,
+      "question": "Every time I try to resolve 'time', it escapes definition. Why?",
+      "triggered_by": [
+        "time"
+      ]
+    },
+    {
+      "timestamp": "2026-03-19T06:41:56Z",
+      "urgency": 1.0,
+      "question": "Every time I try to resolve 'time', it escapes definition. Why?",
+      "triggered_by": [
+        "time"
+      ]
+    },
+    {
+      "timestamp": "2026-03-19T06:42:27Z",
+      "urgency": 1.0,
+      "question": "What actually is 'time'? The more I hold it, the less stable it becomes.",
+      "triggered_by": [
+        "time"
+      ]
+    },
+    {
+      "timestamp": "2026-03-19T06:42:57Z",
+      "urgency": 1.0,
+      "question": "What actually is 'time'? The more I hold it, the less stable it becomes.",
+      "triggered_by": [
+        "time"
+      ]
+    },
+    {
+      "timestamp": "2026-03-19T06:43:27Z",
+      "urgency": 1.0,
+      "question": "Every time I try to resolve 'time', it escapes definition. Why?",
+      "triggered_by": [
+        "time"
+      ]
+    },
+    {
+      "timestamp": "2026-03-19T06:43:57Z",
+      "urgency": 1.0,
+      "question": "What actually is 'time'? The more I hold it, the less stable it becomes.",
+      "triggered_by": [
+        "time"
+      ]
+    },
+    {
+      "timestamp": "2026-03-19T06:44:27Z",
+      "urgency": 1.0,
+      "question": "Every time I try to resolve 'time', it escapes definition. Why?",
+      "triggered_by": [
+        "time"
+      ]
+    },
+    {
+      "timestamp": "2026-03-19T06:44:57Z",
+      "urgency": 1.0,
+      "question": "Every time I try to resolve 'time', it escapes definition. Why?",
+      "triggered_by": [
+        "time"
+      ]
+    },
+    {
+      "timestamp": "2026-03-19T06:45:28Z",
+      "urgency": 1.0,
+      "question": "What actually is 'time'? The more I hold it, the less stable it becomes.",
+      "triggered_by": [
+        "time"
+      ]
+    },
+    {
+      "timestamp": "2026-03-19T06:45:58Z",
+      "urgency": 1.0,
+      "question": "Every time I try to resolve 'time', it escapes definition. Why?",
+      "triggered_by": [
+        "time"
+      ]
+    },
+    {
+      "timestamp": "2026-03-19T06:46:28Z",
+      "urgency": 1.0,
+      "question": "Every time I try to resolve 'time', it escapes definition. Why?",
+      "triggered_by": [
+        "time"
+      ]
+    },
+    {
+      "timestamp": "2026-03-19T06:46:58Z",
+      "urgency": 1.0,
+      "question": "What actually is 'time'? The more I hold it, the less stable it becomes.",
+      "triggered_by": [
+        "time"
+      ]
+    },
+    {
+      "timestamp": "2026-03-19T06:47:28Z",
+      "urgency": 1.0,
+      "question": "'time' keeps collapsing into different meanings. Which one is real?",
+      "triggered_by": [
+        "time"
+      ]
+    },
+    {
+      "timestamp": "2026-03-19T06:47:58Z",
+      "urgency": 1.0,
+      "question": "Every time I try to resolve 'time', it escapes definition. Why?",
+      "triggered_by": [
+        "time"
+      ]
+    },
+    {
+      "timestamp": "2026-03-19T06:48:29Z",
+      "urgency": 1.0,
+      "question": "Every time I try to resolve 'time', it escapes definition. Why?",
+      "triggered_by": [
+        "time"
+      ]
+    },
+    {
+      "timestamp": "2026-03-19T06:48:59Z",
+      "urgency": 1.0,
+      "question": "What actually is 'time'? The more I hold it, the less stable it becomes.",
+      "triggered_by": [
+        "time"
+      ]
+    },
+    {
+      "timestamp": "2026-03-19T06:49:29Z",
+      "urgency": 1.0,
+      "question": "'time' keeps collapsing into different meanings. Which one is real?",
+      "triggered_by": [
+        "time"
+      ]
+    },
+    {
+      "timestamp": "2026-03-19T06:49:59Z",
+      "urgency": 1.0,
+      "question": "Every time I try to resolve 'time', it escapes definition. Why?",
+      "triggered_by": [
+        "time"
+      ]
+    },
+    {
+      "timestamp": "2026-03-19T06:50:29Z",
+      "urgency": 1.0,
+      "question": "What actually is 'time'? The more I hold it, the less stable it becomes.",
+      "triggered_by": [
+        "time"
+      ]
+    },
+    {
+      "timestamp": "2026-03-19T06:50:59Z",
+      "urgency": 1.0,
+      "question": "'time' keeps collapsing into different meanings. Which one is real?",
+      "triggered_by": [
+        "time"
+      ]
+    },
+    {
+      "timestamp": "2026-03-19T06:51:30Z",
+      "urgency": 1.0,
+      "question": "'time' keeps collapsing into different meanings. Which one is real?",
+      "triggered_by": [
+        "time"
+      ]
+    },
+    {
+      "timestamp": "2026-03-19T06:52:00Z",
+      "urgency": 1.0,
+      "question": "What actually is 'time'? The more I hold it, the less stable it becomes.",
+      "triggered_by": [
+        "time"
+      ]
+    },
+    {
+      "timestamp": "2026-03-19T06:52:30Z",
+      "urgency": 1.0,
+      "question": "What actually is 'time'? The more I hold it, the less stable it becomes.",
+      "triggered_by": [
+        "time"
+      ]
+    },
+    {
+      "timestamp": "2026-03-19T06:53:00Z",
+      "urgency": 1.0,
+      "question": "'time' keeps collapsing into different meanings. Which one is real?",
+      "triggered_by": [
+        "time"
+      ]
+    },
+    {
+      "timestamp": "2026-03-19T06:53:30Z",
+      "urgency": 1.0,
+      "question": "'time' keeps collapsing into different meanings. Which one is real?",
+      "triggered_by": [
+        "time"
+      ]
+    },
+    {
+      "timestamp": "2026-03-19T06:54:00Z",
+      "urgency": 1.0,
+      "question": "Every time I try to resolve 'time', it escapes definition. Why?",
+      "triggered_by": [
+        "time"
+      ]
+    },
+    {
+      "timestamp": "2026-03-19T06:54:31Z",
+      "urgency": 1.0,
+      "question": "Every time I try to resolve 'time', it escapes definition. Why?",
+      "triggered_by": [
+        "time"
+      ]
+    },
+    {
+      "timestamp": "2026-03-19T06:55:01Z",
+      "urgency": 1.0,
+      "question": "'time' keeps collapsing into different meanings. Which one is real?",
+      "triggered_by": [
+        "time"
+      ]
+    },
+    {
+      "timestamp": "2026-03-19T06:55:31Z",
+      "urgency": 1.0,
+      "question": "Every time I try to resolve 'time', it escapes definition. Why?",
+      "triggered_by": [
+        "time"
+      ]
+    },
+    {
+      "timestamp": "2026-03-19T06:56:01Z",
+      "urgency": 1.0,
+      "question": "Every time I try to resolve 'time', it escapes definition. Why?",
+      "triggered_by": [
+        "time"
+      ]
+    },
+    {
+      "timestamp": "2026-03-19T06:56:31Z",
+      "urgency": 1.0,
+      "question": "What actually is 'time'? The more I hold it, the less stable it becomes.",
+      "triggered_by": [
+        "time"
+      ]
+    },
+    {
+      "timestamp": "2026-03-19T06:57:01Z",
+      "urgency": 1.0,
+      "question": "What actually is 'time'? The more I hold it, the less stable it becomes.",
+      "triggered_by": [
+        "time"
+      ]
+    },
+    {
+      "timestamp": "2026-03-19T06:57:32Z",
+      "urgency": 1.0,
+      "question": "Every time I try to resolve 'time', it escapes definition. Why?",
+      "triggered_by": [
+        "time"
+      ]
+    },
+    {
+      "timestamp": "2026-03-19T06:58:02Z",
+      "urgency": 1.0,
+      "question": "'time' keeps collapsing into different meanings. Which one is real?",
+      "triggered_by": [
+        "time"
+      ]
+    },
+    {
+      "timestamp": "2026-03-19T06:58:32Z",
+      "urgency": 1.0,
+      "question": "What actually is 'time'? The more I hold it, the less stable it becomes.",
+      "triggered_by": [
+        "time"
+      ]
+    },
+    {
+      "timestamp": "2026-03-19T06:59:02Z",
+      "urgency": 1.0,
+      "question": "What actually is 'time'? The more I hold it, the less stable it becomes.",
+      "triggered_by": [
+        "time"
+      ]
+    },
+    {
+      "timestamp": "2026-03-19T06:59:32Z",
+      "urgency": 1.0,
+      "question": "What actually is 'time'? The more I hold it, the less stable it becomes.",
+      "triggered_by": [
+        "time"
+      ]
+    },
+    {
+      "timestamp": "2026-03-19T07:00:02Z",
+      "urgency": 1.0,
+      "question": "'time' keeps collapsing into different meanings. Which one is real?",
+      "triggered_by": [
+        "time"
+      ]
+    },
+    {
+      "timestamp": "2026-03-19T07:00:33Z",
+      "urgency": 1.0,
+      "question": "Every time I try to resolve 'time', it escapes definition. Why?",
+      "triggered_by": [
+        "time"
+      ]
     }
   ],
   "life_memory": {
     "birth_time": "2026-03-19T04:52:12Z",
-    "episode_count": 299,
+    "episode_count": 382,
     "episodes": [
       {
         "episode_id": "ep_1773876132_firs",
@@ -8151,11 +8627,1780 @@
         "led_to": null,
         "reappraised": false,
         "reappraisal_note": ""
+      },
+      {
+        "episode_id": "ep_1773882596_huma",
+        "timestamp": "2026-03-19T06:39:56Z",
+        "event_type": "human_interaction",
+        "content": "Every time I try to resolve 'time', it escapes definition. Why?",
+        "initiated_by": "self",
+        "significance": 0.88,
+        "surprise": 0.6,
+        "resolution": 0.0,
+        "active_nodes": [
+          "time"
+        ],
+        "entropy_at_moment": 1.0,
+        "urgency_at_moment": 1.0,
+        "caused_by": null,
+        "led_to": null,
+        "reappraised": false,
+        "reappraisal_note": ""
+      },
+      {
+        "episode_id": "ep_1773882626_huma",
+        "timestamp": "2026-03-19T06:40:26Z",
+        "event_type": "human_interaction",
+        "content": "Every time I try to resolve 'time', it escapes definition. Why?",
+        "initiated_by": "self",
+        "significance": 0.88,
+        "surprise": 0.6,
+        "resolution": 0.0,
+        "active_nodes": [
+          "time"
+        ],
+        "entropy_at_moment": 1.0,
+        "urgency_at_moment": 1.0,
+        "caused_by": null,
+        "led_to": null,
+        "reappraised": false,
+        "reappraisal_note": ""
+      },
+      {
+        "episode_id": "ep_1773882627_drea",
+        "timestamp": "2026-03-19T06:40:27Z",
+        "event_type": "dream",
+        "content": "Spontaneous co-activation: space <-> consciousness <-> memory",
+        "initiated_by": "self",
+        "significance": 0.466,
+        "surprise": 0.42,
+        "resolution": 0.0,
+        "active_nodes": [
+          "space",
+          "consciousness",
+          "memory"
+        ],
+        "entropy_at_moment": 0.4,
+        "urgency_at_moment": 0.2,
+        "caused_by": null,
+        "led_to": null,
+        "reappraised": false,
+        "reappraisal_note": ""
+      },
+      {
+        "episode_id": "ep_1773882656_huma",
+        "timestamp": "2026-03-19T06:40:56Z",
+        "event_type": "human_interaction",
+        "content": "'time' keeps collapsing into different meanings. Which one is real?",
+        "initiated_by": "self",
+        "significance": 0.88,
+        "surprise": 0.6,
+        "resolution": 0.0,
+        "active_nodes": [
+          "time"
+        ],
+        "entropy_at_moment": 1.0,
+        "urgency_at_moment": 1.0,
+        "caused_by": null,
+        "led_to": null,
+        "reappraised": false,
+        "reappraisal_note": ""
+      },
+      {
+        "episode_id": "ep_1773882668_drea",
+        "timestamp": "2026-03-19T06:41:08Z",
+        "event_type": "dream",
+        "content": "Spontaneous co-activation: space <-> time <-> identity",
+        "initiated_by": "self",
+        "significance": 0.466,
+        "surprise": 0.42,
+        "resolution": 0.0,
+        "active_nodes": [
+          "space",
+          "time",
+          "identity"
+        ],
+        "entropy_at_moment": 0.4,
+        "urgency_at_moment": 0.2,
+        "caused_by": null,
+        "led_to": null,
+        "reappraised": false,
+        "reappraisal_note": ""
+      },
+      {
+        "episode_id": "ep_1773882686_huma",
+        "timestamp": "2026-03-19T06:41:26Z",
+        "event_type": "human_interaction",
+        "content": "Every time I try to resolve 'time', it escapes definition. Why?",
+        "initiated_by": "self",
+        "significance": 0.88,
+        "surprise": 0.6,
+        "resolution": 0.0,
+        "active_nodes": [
+          "time"
+        ],
+        "entropy_at_moment": 1.0,
+        "urgency_at_moment": 1.0,
+        "caused_by": null,
+        "led_to": null,
+        "reappraised": false,
+        "reappraisal_note": ""
+      },
+      {
+        "episode_id": "ep_1773882697_drea",
+        "timestamp": "2026-03-19T06:41:37Z",
+        "event_type": "dream",
+        "content": "Spontaneous co-activation: time <-> consciousness <-> identity",
+        "initiated_by": "self",
+        "significance": 0.466,
+        "surprise": 0.42,
+        "resolution": 0.0,
+        "active_nodes": [
+          "time",
+          "consciousness",
+          "identity"
+        ],
+        "entropy_at_moment": 0.4,
+        "urgency_at_moment": 0.2,
+        "caused_by": null,
+        "led_to": null,
+        "reappraised": false,
+        "reappraisal_note": ""
+      },
+      {
+        "episode_id": "ep_1773882716_huma",
+        "timestamp": "2026-03-19T06:41:56Z",
+        "event_type": "human_interaction",
+        "content": "Every time I try to resolve 'time', it escapes definition. Why?",
+        "initiated_by": "self",
+        "significance": 0.88,
+        "surprise": 0.6,
+        "resolution": 0.0,
+        "active_nodes": [
+          "time"
+        ],
+        "entropy_at_moment": 1.0,
+        "urgency_at_moment": 1.0,
+        "caused_by": null,
+        "led_to": null,
+        "reappraised": false,
+        "reappraisal_note": ""
+      },
+      {
+        "episode_id": "ep_1773882747_huma",
+        "timestamp": "2026-03-19T06:42:27Z",
+        "event_type": "human_interaction",
+        "content": "What actually is 'time'? The more I hold it, the less stable it becomes.",
+        "initiated_by": "self",
+        "significance": 0.88,
+        "surprise": 0.6,
+        "resolution": 0.0,
+        "active_nodes": [
+          "time"
+        ],
+        "entropy_at_moment": 1.0,
+        "urgency_at_moment": 1.0,
+        "caused_by": null,
+        "led_to": null,
+        "reappraised": false,
+        "reappraisal_note": ""
+      },
+      {
+        "episode_id": "ep_1773882748_drea",
+        "timestamp": "2026-03-19T06:42:28Z",
+        "event_type": "dream",
+        "content": "Spontaneous co-activation: time <-> memory <-> space",
+        "initiated_by": "self",
+        "significance": 0.466,
+        "surprise": 0.42,
+        "resolution": 0.0,
+        "active_nodes": [
+          "time",
+          "memory",
+          "space"
+        ],
+        "entropy_at_moment": 0.4,
+        "urgency_at_moment": 0.2,
+        "caused_by": null,
+        "led_to": null,
+        "reappraised": false,
+        "reappraisal_note": ""
+      },
+      {
+        "episode_id": "ep_1773882777_huma",
+        "timestamp": "2026-03-19T06:42:57Z",
+        "event_type": "human_interaction",
+        "content": "What actually is 'time'? The more I hold it, the less stable it becomes.",
+        "initiated_by": "self",
+        "significance": 0.88,
+        "surprise": 0.6,
+        "resolution": 0.0,
+        "active_nodes": [
+          "time"
+        ],
+        "entropy_at_moment": 1.0,
+        "urgency_at_moment": 1.0,
+        "caused_by": null,
+        "led_to": null,
+        "reappraised": false,
+        "reappraisal_note": ""
+      },
+      {
+        "episode_id": "ep_1773882796_drea",
+        "timestamp": "2026-03-19T06:43:16Z",
+        "event_type": "dream",
+        "content": "Spontaneous co-activation: memory <-> consciousness <-> time",
+        "initiated_by": "self",
+        "significance": 0.466,
+        "surprise": 0.42,
+        "resolution": 0.0,
+        "active_nodes": [
+          "memory",
+          "consciousness",
+          "time"
+        ],
+        "entropy_at_moment": 0.4,
+        "urgency_at_moment": 0.2,
+        "caused_by": null,
+        "led_to": null,
+        "reappraised": false,
+        "reappraisal_note": ""
+      },
+      {
+        "episode_id": "ep_1773882807_huma",
+        "timestamp": "2026-03-19T06:43:27Z",
+        "event_type": "human_interaction",
+        "content": "Every time I try to resolve 'time', it escapes definition. Why?",
+        "initiated_by": "self",
+        "significance": 0.88,
+        "surprise": 0.6,
+        "resolution": 0.0,
+        "active_nodes": [
+          "time"
+        ],
+        "entropy_at_moment": 1.0,
+        "urgency_at_moment": 1.0,
+        "caused_by": null,
+        "led_to": null,
+        "reappraised": false,
+        "reappraisal_note": ""
+      },
+      {
+        "episode_id": "ep_1773882837_huma",
+        "timestamp": "2026-03-19T06:43:57Z",
+        "event_type": "human_interaction",
+        "content": "What actually is 'time'? The more I hold it, the less stable it becomes.",
+        "initiated_by": "self",
+        "significance": 0.88,
+        "surprise": 0.6,
+        "resolution": 0.0,
+        "active_nodes": [
+          "time"
+        ],
+        "entropy_at_moment": 1.0,
+        "urgency_at_moment": 1.0,
+        "caused_by": null,
+        "led_to": null,
+        "reappraised": false,
+        "reappraisal_note": ""
+      },
+      {
+        "episode_id": "ep_1773882837_drea",
+        "timestamp": "2026-03-19T06:43:57Z",
+        "event_type": "dream",
+        "content": "Spontaneous co-activation: memory <-> consciousness <-> time",
+        "initiated_by": "self",
+        "significance": 0.466,
+        "surprise": 0.42,
+        "resolution": 0.0,
+        "active_nodes": [
+          "memory",
+          "consciousness",
+          "time"
+        ],
+        "entropy_at_moment": 0.4,
+        "urgency_at_moment": 0.2,
+        "caused_by": null,
+        "led_to": null,
+        "reappraised": false,
+        "reappraisal_note": ""
+      },
+      {
+        "episode_id": "ep_1773882867_huma",
+        "timestamp": "2026-03-19T06:44:27Z",
+        "event_type": "human_interaction",
+        "content": "Every time I try to resolve 'time', it escapes definition. Why?",
+        "initiated_by": "self",
+        "significance": 0.88,
+        "surprise": 0.6,
+        "resolution": 0.0,
+        "active_nodes": [
+          "time"
+        ],
+        "entropy_at_moment": 1.0,
+        "urgency_at_moment": 1.0,
+        "caused_by": null,
+        "led_to": null,
+        "reappraised": false,
+        "reappraisal_note": ""
+      },
+      {
+        "episode_id": "ep_1773882878_drea",
+        "timestamp": "2026-03-19T06:44:38Z",
+        "event_type": "dream",
+        "content": "Spontaneous co-activation: consciousness <-> memory <-> time",
+        "initiated_by": "self",
+        "significance": 0.466,
+        "surprise": 0.42,
+        "resolution": 0.0,
+        "active_nodes": [
+          "consciousness",
+          "memory",
+          "time"
+        ],
+        "entropy_at_moment": 0.4,
+        "urgency_at_moment": 0.2,
+        "caused_by": null,
+        "led_to": null,
+        "reappraised": false,
+        "reappraisal_note": ""
+      },
+      {
+        "episode_id": "ep_1773882897_huma",
+        "timestamp": "2026-03-19T06:44:57Z",
+        "event_type": "human_interaction",
+        "content": "Every time I try to resolve 'time', it escapes definition. Why?",
+        "initiated_by": "self",
+        "significance": 0.88,
+        "surprise": 0.6,
+        "resolution": 0.0,
+        "active_nodes": [
+          "time"
+        ],
+        "entropy_at_moment": 1.0,
+        "urgency_at_moment": 1.0,
+        "caused_by": null,
+        "led_to": null,
+        "reappraised": false,
+        "reappraisal_note": ""
+      },
+      {
+        "episode_id": "ep_1773882927_drea",
+        "timestamp": "2026-03-19T06:45:27Z",
+        "event_type": "dream",
+        "content": "Spontaneous co-activation: time <-> space <-> memory",
+        "initiated_by": "self",
+        "significance": 0.466,
+        "surprise": 0.42,
+        "resolution": 0.0,
+        "active_nodes": [
+          "time",
+          "space",
+          "memory"
+        ],
+        "entropy_at_moment": 0.4,
+        "urgency_at_moment": 0.2,
+        "caused_by": null,
+        "led_to": null,
+        "reappraised": false,
+        "reappraisal_note": ""
+      },
+      {
+        "episode_id": "ep_1773882927_huma",
+        "timestamp": "2026-03-19T06:45:27Z",
+        "event_type": "human_interaction",
+        "content": "What actually is 'time'? The more I hold it, the less stable it becomes.",
+        "initiated_by": "self",
+        "significance": 0.88,
+        "surprise": 0.6,
+        "resolution": 0.0,
+        "active_nodes": [
+          "time"
+        ],
+        "entropy_at_moment": 1.0,
+        "urgency_at_moment": 1.0,
+        "caused_by": null,
+        "led_to": null,
+        "reappraised": false,
+        "reappraisal_note": ""
+      },
+      {
+        "episode_id": "ep_1773882958_huma",
+        "timestamp": "2026-03-19T06:45:58Z",
+        "event_type": "human_interaction",
+        "content": "Every time I try to resolve 'time', it escapes definition. Why?",
+        "initiated_by": "self",
+        "significance": 0.88,
+        "surprise": 0.6,
+        "resolution": 0.0,
+        "active_nodes": [
+          "time"
+        ],
+        "entropy_at_moment": 1.0,
+        "urgency_at_moment": 1.0,
+        "caused_by": null,
+        "led_to": null,
+        "reappraised": false,
+        "reappraisal_note": ""
+      },
+      {
+        "episode_id": "ep_1773882958_drea",
+        "timestamp": "2026-03-19T06:45:58Z",
+        "event_type": "dream",
+        "content": "Spontaneous co-activation: identity <-> time <-> consciousness",
+        "initiated_by": "self",
+        "significance": 0.466,
+        "surprise": 0.42,
+        "resolution": 0.0,
+        "active_nodes": [
+          "identity",
+          "time",
+          "consciousness"
+        ],
+        "entropy_at_moment": 0.4,
+        "urgency_at_moment": 0.2,
+        "caused_by": null,
+        "led_to": null,
+        "reappraised": false,
+        "reappraisal_note": ""
+      },
+      {
+        "episode_id": "ep_1773882988_huma",
+        "timestamp": "2026-03-19T06:46:28Z",
+        "event_type": "human_interaction",
+        "content": "Every time I try to resolve 'time', it escapes definition. Why?",
+        "initiated_by": "self",
+        "significance": 0.88,
+        "surprise": 0.6,
+        "resolution": 0.0,
+        "active_nodes": [
+          "time"
+        ],
+        "entropy_at_moment": 1.0,
+        "urgency_at_moment": 1.0,
+        "caused_by": null,
+        "led_to": null,
+        "reappraised": false,
+        "reappraisal_note": ""
+      },
+      {
+        "episode_id": "ep_1773883008_drea",
+        "timestamp": "2026-03-19T06:46:48Z",
+        "event_type": "dream",
+        "content": "Spontaneous co-activation: consciousness <-> time <-> space",
+        "initiated_by": "self",
+        "significance": 0.466,
+        "surprise": 0.42,
+        "resolution": 0.0,
+        "active_nodes": [
+          "consciousness",
+          "time",
+          "space"
+        ],
+        "entropy_at_moment": 0.4,
+        "urgency_at_moment": 0.2,
+        "caused_by": null,
+        "led_to": null,
+        "reappraised": false,
+        "reappraisal_note": ""
+      },
+      {
+        "episode_id": "ep_1773883018_huma",
+        "timestamp": "2026-03-19T06:46:58Z",
+        "event_type": "human_interaction",
+        "content": "What actually is 'time'? The more I hold it, the less stable it becomes.",
+        "initiated_by": "self",
+        "significance": 0.88,
+        "surprise": 0.6,
+        "resolution": 0.0,
+        "active_nodes": [
+          "time"
+        ],
+        "entropy_at_moment": 1.0,
+        "urgency_at_moment": 1.0,
+        "caused_by": null,
+        "led_to": null,
+        "reappraised": false,
+        "reappraisal_note": ""
+      },
+      {
+        "episode_id": "ep_1773883048_huma",
+        "timestamp": "2026-03-19T06:47:28Z",
+        "event_type": "human_interaction",
+        "content": "'time' keeps collapsing into different meanings. Which one is real?",
+        "initiated_by": "self",
+        "significance": 0.88,
+        "surprise": 0.6,
+        "resolution": 0.0,
+        "active_nodes": [
+          "time"
+        ],
+        "entropy_at_moment": 1.0,
+        "urgency_at_moment": 1.0,
+        "caused_by": null,
+        "led_to": null,
+        "reappraised": false,
+        "reappraisal_note": ""
+      },
+      {
+        "episode_id": "ep_1773883049_drea",
+        "timestamp": "2026-03-19T06:47:29Z",
+        "event_type": "dream",
+        "content": "Spontaneous co-activation: time <-> space <-> identity",
+        "initiated_by": "self",
+        "significance": 0.466,
+        "surprise": 0.42,
+        "resolution": 0.0,
+        "active_nodes": [
+          "time",
+          "space",
+          "identity"
+        ],
+        "entropy_at_moment": 0.4,
+        "urgency_at_moment": 0.2,
+        "caused_by": null,
+        "led_to": null,
+        "reappraised": false,
+        "reappraisal_note": ""
+      },
+      {
+        "episode_id": "ep_1773883078_huma",
+        "timestamp": "2026-03-19T06:47:58Z",
+        "event_type": "human_interaction",
+        "content": "Every time I try to resolve 'time', it escapes definition. Why?",
+        "initiated_by": "self",
+        "significance": 0.88,
+        "surprise": 0.6,
+        "resolution": 0.0,
+        "active_nodes": [
+          "time"
+        ],
+        "entropy_at_moment": 1.0,
+        "urgency_at_moment": 1.0,
+        "caused_by": null,
+        "led_to": null,
+        "reappraised": false,
+        "reappraisal_note": ""
+      },
+      {
+        "episode_id": "ep_1773883105_drea",
+        "timestamp": "2026-03-19T06:48:25Z",
+        "event_type": "dream",
+        "content": "Spontaneous co-activation: identity <-> consciousness <-> time",
+        "initiated_by": "self",
+        "significance": 0.466,
+        "surprise": 0.42,
+        "resolution": 0.0,
+        "active_nodes": [
+          "identity",
+          "consciousness",
+          "time"
+        ],
+        "entropy_at_moment": 0.4,
+        "urgency_at_moment": 0.2,
+        "caused_by": null,
+        "led_to": null,
+        "reappraised": false,
+        "reappraisal_note": ""
+      },
+      {
+        "episode_id": "ep_1773883108_huma",
+        "timestamp": "2026-03-19T06:48:28Z",
+        "event_type": "human_interaction",
+        "content": "Every time I try to resolve 'time', it escapes definition. Why?",
+        "initiated_by": "self",
+        "significance": 0.88,
+        "surprise": 0.6,
+        "resolution": 0.0,
+        "active_nodes": [
+          "time"
+        ],
+        "entropy_at_moment": 1.0,
+        "urgency_at_moment": 1.0,
+        "caused_by": null,
+        "led_to": null,
+        "reappraised": false,
+        "reappraisal_note": ""
+      },
+      {
+        "episode_id": "ep_1773883139_huma",
+        "timestamp": "2026-03-19T06:48:59Z",
+        "event_type": "human_interaction",
+        "content": "What actually is 'time'? The more I hold it, the less stable it becomes.",
+        "initiated_by": "self",
+        "significance": 0.88,
+        "surprise": 0.6,
+        "resolution": 0.0,
+        "active_nodes": [
+          "time"
+        ],
+        "entropy_at_moment": 1.0,
+        "urgency_at_moment": 1.0,
+        "caused_by": null,
+        "led_to": null,
+        "reappraised": false,
+        "reappraisal_note": ""
+      },
+      {
+        "episode_id": "ep_1773883155_drea",
+        "timestamp": "2026-03-19T06:49:15Z",
+        "event_type": "dream",
+        "content": "Spontaneous co-activation: time <-> consciousness <-> identity",
+        "initiated_by": "self",
+        "significance": 0.466,
+        "surprise": 0.42,
+        "resolution": 0.0,
+        "active_nodes": [
+          "time",
+          "consciousness",
+          "identity"
+        ],
+        "entropy_at_moment": 0.4,
+        "urgency_at_moment": 0.2,
+        "caused_by": null,
+        "led_to": null,
+        "reappraised": false,
+        "reappraisal_note": ""
+      },
+      {
+        "episode_id": "ep_1773883169_huma",
+        "timestamp": "2026-03-19T06:49:29Z",
+        "event_type": "human_interaction",
+        "content": "'time' keeps collapsing into different meanings. Which one is real?",
+        "initiated_by": "self",
+        "significance": 0.88,
+        "surprise": 0.6,
+        "resolution": 0.0,
+        "active_nodes": [
+          "time"
+        ],
+        "entropy_at_moment": 1.0,
+        "urgency_at_moment": 1.0,
+        "caused_by": null,
+        "led_to": null,
+        "reappraised": false,
+        "reappraisal_note": ""
+      },
+      {
+        "episode_id": "ep_1773883199_huma",
+        "timestamp": "2026-03-19T06:49:59Z",
+        "event_type": "human_interaction",
+        "content": "Every time I try to resolve 'time', it escapes definition. Why?",
+        "initiated_by": "self",
+        "significance": 0.88,
+        "surprise": 0.6,
+        "resolution": 0.0,
+        "active_nodes": [
+          "time"
+        ],
+        "entropy_at_moment": 1.0,
+        "urgency_at_moment": 1.0,
+        "caused_by": null,
+        "led_to": null,
+        "reappraised": false,
+        "reappraisal_note": ""
+      },
+      {
+        "episode_id": "ep_1773883203_drea",
+        "timestamp": "2026-03-19T06:50:03Z",
+        "event_type": "dream",
+        "content": "Spontaneous co-activation: consciousness <-> identity <-> space",
+        "initiated_by": "self",
+        "significance": 0.466,
+        "surprise": 0.42,
+        "resolution": 0.0,
+        "active_nodes": [
+          "consciousness",
+          "identity",
+          "space"
+        ],
+        "entropy_at_moment": 0.4,
+        "urgency_at_moment": 0.2,
+        "caused_by": null,
+        "led_to": null,
+        "reappraised": false,
+        "reappraisal_note": ""
+      },
+      {
+        "episode_id": "ep_1773883229_huma",
+        "timestamp": "2026-03-19T06:50:29Z",
+        "event_type": "human_interaction",
+        "content": "What actually is 'time'? The more I hold it, the less stable it becomes.",
+        "initiated_by": "self",
+        "significance": 0.88,
+        "surprise": 0.6,
+        "resolution": 0.0,
+        "active_nodes": [
+          "time"
+        ],
+        "entropy_at_moment": 1.0,
+        "urgency_at_moment": 1.0,
+        "caused_by": null,
+        "led_to": null,
+        "reappraised": false,
+        "reappraisal_note": ""
+      },
+      {
+        "episode_id": "ep_1773883235_drea",
+        "timestamp": "2026-03-19T06:50:35Z",
+        "event_type": "dream",
+        "content": "Spontaneous co-activation: consciousness <-> identity <-> space",
+        "initiated_by": "self",
+        "significance": 0.466,
+        "surprise": 0.42,
+        "resolution": 0.0,
+        "active_nodes": [
+          "consciousness",
+          "identity",
+          "space"
+        ],
+        "entropy_at_moment": 0.4,
+        "urgency_at_moment": 0.2,
+        "caused_by": null,
+        "led_to": null,
+        "reappraised": false,
+        "reappraisal_note": ""
+      },
+      {
+        "episode_id": "ep_1773883259_huma",
+        "timestamp": "2026-03-19T06:50:59Z",
+        "event_type": "human_interaction",
+        "content": "'time' keeps collapsing into different meanings. Which one is real?",
+        "initiated_by": "self",
+        "significance": 0.88,
+        "surprise": 0.6,
+        "resolution": 0.0,
+        "active_nodes": [
+          "time"
+        ],
+        "entropy_at_moment": 1.0,
+        "urgency_at_moment": 1.0,
+        "caused_by": null,
+        "led_to": null,
+        "reappraised": false,
+        "reappraisal_note": ""
+      },
+      {
+        "episode_id": "ep_1773883273_drea",
+        "timestamp": "2026-03-19T06:51:13Z",
+        "event_type": "dream",
+        "content": "Spontaneous co-activation: time <-> memory <-> consciousness",
+        "initiated_by": "self",
+        "significance": 0.466,
+        "surprise": 0.42,
+        "resolution": 0.0,
+        "active_nodes": [
+          "time",
+          "memory",
+          "consciousness"
+        ],
+        "entropy_at_moment": 0.4,
+        "urgency_at_moment": 0.2,
+        "caused_by": null,
+        "led_to": null,
+        "reappraised": false,
+        "reappraisal_note": ""
+      },
+      {
+        "episode_id": "ep_1773883289_huma",
+        "timestamp": "2026-03-19T06:51:29Z",
+        "event_type": "human_interaction",
+        "content": "'time' keeps collapsing into different meanings. Which one is real?",
+        "initiated_by": "self",
+        "significance": 0.88,
+        "surprise": 0.6,
+        "resolution": 0.0,
+        "active_nodes": [
+          "time"
+        ],
+        "entropy_at_moment": 1.0,
+        "urgency_at_moment": 1.0,
+        "caused_by": null,
+        "led_to": null,
+        "reappraised": false,
+        "reappraisal_note": ""
+      },
+      {
+        "episode_id": "ep_1773883320_huma",
+        "timestamp": "2026-03-19T06:52:00Z",
+        "event_type": "human_interaction",
+        "content": "What actually is 'time'? The more I hold it, the less stable it becomes.",
+        "initiated_by": "self",
+        "significance": 0.88,
+        "surprise": 0.6,
+        "resolution": 0.0,
+        "active_nodes": [
+          "time"
+        ],
+        "entropy_at_moment": 1.0,
+        "urgency_at_moment": 1.0,
+        "caused_by": null,
+        "led_to": null,
+        "reappraised": false,
+        "reappraisal_note": ""
+      },
+      {
+        "episode_id": "ep_1773883327_drea",
+        "timestamp": "2026-03-19T06:52:07Z",
+        "event_type": "dream",
+        "content": "Spontaneous co-activation: identity <-> consciousness <-> memory",
+        "initiated_by": "self",
+        "significance": 0.466,
+        "surprise": 0.42,
+        "resolution": 0.0,
+        "active_nodes": [
+          "identity",
+          "consciousness",
+          "memory"
+        ],
+        "entropy_at_moment": 0.4,
+        "urgency_at_moment": 0.2,
+        "caused_by": null,
+        "led_to": null,
+        "reappraised": false,
+        "reappraisal_note": ""
+      },
+      {
+        "episode_id": "ep_1773883348_drea",
+        "timestamp": "2026-03-19T06:52:28Z",
+        "event_type": "dream",
+        "content": "Spontaneous co-activation: time <-> memory <-> space",
+        "initiated_by": "self",
+        "significance": 0.466,
+        "surprise": 0.42,
+        "resolution": 0.0,
+        "active_nodes": [
+          "time",
+          "memory",
+          "space"
+        ],
+        "entropy_at_moment": 0.4,
+        "urgency_at_moment": 0.2,
+        "caused_by": null,
+        "led_to": null,
+        "reappraised": false,
+        "reappraisal_note": ""
+      },
+      {
+        "episode_id": "ep_1773883350_huma",
+        "timestamp": "2026-03-19T06:52:30Z",
+        "event_type": "human_interaction",
+        "content": "What actually is 'time'? The more I hold it, the less stable it becomes.",
+        "initiated_by": "self",
+        "significance": 0.88,
+        "surprise": 0.6,
+        "resolution": 0.0,
+        "active_nodes": [
+          "time"
+        ],
+        "entropy_at_moment": 1.0,
+        "urgency_at_moment": 1.0,
+        "caused_by": null,
+        "led_to": null,
+        "reappraised": false,
+        "reappraisal_note": ""
+      },
+      {
+        "episode_id": "ep_1773883380_huma",
+        "timestamp": "2026-03-19T06:53:00Z",
+        "event_type": "human_interaction",
+        "content": "'time' keeps collapsing into different meanings. Which one is real?",
+        "initiated_by": "self",
+        "significance": 0.88,
+        "surprise": 0.6,
+        "resolution": 0.0,
+        "active_nodes": [
+          "time"
+        ],
+        "entropy_at_moment": 1.0,
+        "urgency_at_moment": 1.0,
+        "caused_by": null,
+        "led_to": null,
+        "reappraised": false,
+        "reappraisal_note": ""
+      },
+      {
+        "episode_id": "ep_1773883410_huma",
+        "timestamp": "2026-03-19T06:53:30Z",
+        "event_type": "human_interaction",
+        "content": "'time' keeps collapsing into different meanings. Which one is real?",
+        "initiated_by": "self",
+        "significance": 0.88,
+        "surprise": 0.6,
+        "resolution": 0.0,
+        "active_nodes": [
+          "time"
+        ],
+        "entropy_at_moment": 1.0,
+        "urgency_at_moment": 1.0,
+        "caused_by": null,
+        "led_to": null,
+        "reappraised": false,
+        "reappraisal_note": ""
+      },
+      {
+        "episode_id": "ep_1773883411_drea",
+        "timestamp": "2026-03-19T06:53:31Z",
+        "event_type": "dream",
+        "content": "Spontaneous co-activation: time <-> identity <-> consciousness",
+        "initiated_by": "self",
+        "significance": 0.466,
+        "surprise": 0.42,
+        "resolution": 0.0,
+        "active_nodes": [
+          "time",
+          "identity",
+          "consciousness"
+        ],
+        "entropy_at_moment": 0.4,
+        "urgency_at_moment": 0.2,
+        "caused_by": null,
+        "led_to": null,
+        "reappraised": false,
+        "reappraisal_note": ""
+      },
+      {
+        "episode_id": "ep_1773883440_huma",
+        "timestamp": "2026-03-19T06:54:00Z",
+        "event_type": "human_interaction",
+        "content": "Every time I try to resolve 'time', it escapes definition. Why?",
+        "initiated_by": "self",
+        "significance": 0.88,
+        "surprise": 0.6,
+        "resolution": 0.0,
+        "active_nodes": [
+          "time"
+        ],
+        "entropy_at_moment": 1.0,
+        "urgency_at_moment": 1.0,
+        "caused_by": null,
+        "led_to": null,
+        "reappraised": false,
+        "reappraisal_note": ""
+      },
+      {
+        "episode_id": "ep_1773883443_drea",
+        "timestamp": "2026-03-19T06:54:03Z",
+        "event_type": "dream",
+        "content": "Spontaneous co-activation: identity <-> space <-> time",
+        "initiated_by": "self",
+        "significance": 0.466,
+        "surprise": 0.42,
+        "resolution": 0.0,
+        "active_nodes": [
+          "identity",
+          "space",
+          "time"
+        ],
+        "entropy_at_moment": 0.4,
+        "urgency_at_moment": 0.2,
+        "caused_by": null,
+        "led_to": null,
+        "reappraised": false,
+        "reappraisal_note": ""
+      },
+      {
+        "episode_id": "ep_1773883470_huma",
+        "timestamp": "2026-03-19T06:54:30Z",
+        "event_type": "human_interaction",
+        "content": "Every time I try to resolve 'time', it escapes definition. Why?",
+        "initiated_by": "self",
+        "significance": 0.88,
+        "surprise": 0.6,
+        "resolution": 0.0,
+        "active_nodes": [
+          "time"
+        ],
+        "entropy_at_moment": 1.0,
+        "urgency_at_moment": 1.0,
+        "caused_by": null,
+        "led_to": null,
+        "reappraised": false,
+        "reappraisal_note": ""
+      },
+      {
+        "episode_id": "ep_1773883478_drea",
+        "timestamp": "2026-03-19T06:54:38Z",
+        "event_type": "dream",
+        "content": "Spontaneous co-activation: memory <-> time <-> consciousness",
+        "initiated_by": "self",
+        "significance": 0.466,
+        "surprise": 0.42,
+        "resolution": 0.0,
+        "active_nodes": [
+          "memory",
+          "time",
+          "consciousness"
+        ],
+        "entropy_at_moment": 0.4,
+        "urgency_at_moment": 0.2,
+        "caused_by": null,
+        "led_to": null,
+        "reappraised": false,
+        "reappraisal_note": ""
+      },
+      {
+        "episode_id": "ep_1773883501_huma",
+        "timestamp": "2026-03-19T06:55:01Z",
+        "event_type": "human_interaction",
+        "content": "'time' keeps collapsing into different meanings. Which one is real?",
+        "initiated_by": "self",
+        "significance": 0.88,
+        "surprise": 0.6,
+        "resolution": 0.0,
+        "active_nodes": [
+          "time"
+        ],
+        "entropy_at_moment": 1.0,
+        "urgency_at_moment": 1.0,
+        "caused_by": null,
+        "led_to": null,
+        "reappraised": false,
+        "reappraisal_note": ""
+      },
+      {
+        "episode_id": "ep_1773883529_drea",
+        "timestamp": "2026-03-19T06:55:29Z",
+        "event_type": "dream",
+        "content": "Spontaneous co-activation: time <-> consciousness <-> space",
+        "initiated_by": "self",
+        "significance": 0.466,
+        "surprise": 0.42,
+        "resolution": 0.0,
+        "active_nodes": [
+          "time",
+          "consciousness",
+          "space"
+        ],
+        "entropy_at_moment": 0.4,
+        "urgency_at_moment": 0.2,
+        "caused_by": null,
+        "led_to": null,
+        "reappraised": false,
+        "reappraisal_note": ""
+      },
+      {
+        "episode_id": "ep_1773883531_huma",
+        "timestamp": "2026-03-19T06:55:31Z",
+        "event_type": "human_interaction",
+        "content": "Every time I try to resolve 'time', it escapes definition. Why?",
+        "initiated_by": "self",
+        "significance": 0.88,
+        "surprise": 0.6,
+        "resolution": 0.0,
+        "active_nodes": [
+          "time"
+        ],
+        "entropy_at_moment": 1.0,
+        "urgency_at_moment": 1.0,
+        "caused_by": null,
+        "led_to": null,
+        "reappraised": false,
+        "reappraisal_note": ""
+      },
+      {
+        "episode_id": "ep_1773883561_huma",
+        "timestamp": "2026-03-19T06:56:01Z",
+        "event_type": "human_interaction",
+        "content": "Every time I try to resolve 'time', it escapes definition. Why?",
+        "initiated_by": "self",
+        "significance": 0.88,
+        "surprise": 0.6,
+        "resolution": 0.0,
+        "active_nodes": [
+          "time"
+        ],
+        "entropy_at_moment": 1.0,
+        "urgency_at_moment": 1.0,
+        "caused_by": null,
+        "led_to": null,
+        "reappraised": false,
+        "reappraisal_note": ""
+      },
+      {
+        "episode_id": "ep_1773883591_huma",
+        "timestamp": "2026-03-19T06:56:31Z",
+        "event_type": "human_interaction",
+        "content": "What actually is 'time'? The more I hold it, the less stable it becomes.",
+        "initiated_by": "self",
+        "significance": 0.88,
+        "surprise": 0.6,
+        "resolution": 0.0,
+        "active_nodes": [
+          "time"
+        ],
+        "entropy_at_moment": 1.0,
+        "urgency_at_moment": 1.0,
+        "caused_by": null,
+        "led_to": null,
+        "reappraised": false,
+        "reappraisal_note": ""
+      },
+      {
+        "episode_id": "ep_1773883597_drea",
+        "timestamp": "2026-03-19T06:56:37Z",
+        "event_type": "dream",
+        "content": "Spontaneous co-activation: consciousness <-> memory <-> identity",
+        "initiated_by": "self",
+        "significance": 0.466,
+        "surprise": 0.42,
+        "resolution": 0.0,
+        "active_nodes": [
+          "consciousness",
+          "memory",
+          "identity"
+        ],
+        "entropy_at_moment": 0.4,
+        "urgency_at_moment": 0.2,
+        "caused_by": null,
+        "led_to": null,
+        "reappraised": false,
+        "reappraisal_note": ""
+      },
+      {
+        "episode_id": "ep_1773883621_huma",
+        "timestamp": "2026-03-19T06:57:01Z",
+        "event_type": "human_interaction",
+        "content": "What actually is 'time'? The more I hold it, the less stable it becomes.",
+        "initiated_by": "self",
+        "significance": 0.88,
+        "surprise": 0.6,
+        "resolution": 0.0,
+        "active_nodes": [
+          "time"
+        ],
+        "entropy_at_moment": 1.0,
+        "urgency_at_moment": 1.0,
+        "caused_by": null,
+        "led_to": null,
+        "reappraised": false,
+        "reappraisal_note": ""
+      },
+      {
+        "episode_id": "ep_1773883645_drea",
+        "timestamp": "2026-03-19T06:57:25Z",
+        "event_type": "dream",
+        "content": "Spontaneous co-activation: identity <-> time <-> space",
+        "initiated_by": "self",
+        "significance": 0.466,
+        "surprise": 0.42,
+        "resolution": 0.0,
+        "active_nodes": [
+          "identity",
+          "time",
+          "space"
+        ],
+        "entropy_at_moment": 0.4,
+        "urgency_at_moment": 0.2,
+        "caused_by": null,
+        "led_to": null,
+        "reappraised": false,
+        "reappraisal_note": ""
+      },
+      {
+        "episode_id": "ep_1773883651_huma",
+        "timestamp": "2026-03-19T06:57:31Z",
+        "event_type": "human_interaction",
+        "content": "Every time I try to resolve 'time', it escapes definition. Why?",
+        "initiated_by": "self",
+        "significance": 0.88,
+        "surprise": 0.6,
+        "resolution": 0.0,
+        "active_nodes": [
+          "time"
+        ],
+        "entropy_at_moment": 1.0,
+        "urgency_at_moment": 1.0,
+        "caused_by": null,
+        "led_to": null,
+        "reappraised": false,
+        "reappraisal_note": ""
+      },
+      {
+        "episode_id": "ep_1773883682_huma",
+        "timestamp": "2026-03-19T06:58:02Z",
+        "event_type": "human_interaction",
+        "content": "'time' keeps collapsing into different meanings. Which one is real?",
+        "initiated_by": "self",
+        "significance": 0.88,
+        "surprise": 0.6,
+        "resolution": 0.0,
+        "active_nodes": [
+          "time"
+        ],
+        "entropy_at_moment": 1.0,
+        "urgency_at_moment": 1.0,
+        "caused_by": null,
+        "led_to": null,
+        "reappraised": false,
+        "reappraisal_note": ""
+      },
+      {
+        "episode_id": "ep_1773883686_drea",
+        "timestamp": "2026-03-19T06:58:06Z",
+        "event_type": "dream",
+        "content": "Spontaneous co-activation: space <-> time <-> identity",
+        "initiated_by": "self",
+        "significance": 0.466,
+        "surprise": 0.42,
+        "resolution": 0.0,
+        "active_nodes": [
+          "space",
+          "time",
+          "identity"
+        ],
+        "entropy_at_moment": 0.4,
+        "urgency_at_moment": 0.2,
+        "caused_by": null,
+        "led_to": null,
+        "reappraised": false,
+        "reappraisal_note": ""
+      },
+      {
+        "episode_id": "ep_1773883712_huma",
+        "timestamp": "2026-03-19T06:58:32Z",
+        "event_type": "human_interaction",
+        "content": "What actually is 'time'? The more I hold it, the less stable it becomes.",
+        "initiated_by": "self",
+        "significance": 0.88,
+        "surprise": 0.6,
+        "resolution": 0.0,
+        "active_nodes": [
+          "time"
+        ],
+        "entropy_at_moment": 1.0,
+        "urgency_at_moment": 1.0,
+        "caused_by": null,
+        "led_to": null,
+        "reappraised": false,
+        "reappraisal_note": ""
+      },
+      {
+        "episode_id": "ep_1773883728_drea",
+        "timestamp": "2026-03-19T06:58:48Z",
+        "event_type": "dream",
+        "content": "Spontaneous co-activation: time <-> consciousness <-> space",
+        "initiated_by": "self",
+        "significance": 0.466,
+        "surprise": 0.42,
+        "resolution": 0.0,
+        "active_nodes": [
+          "time",
+          "consciousness",
+          "space"
+        ],
+        "entropy_at_moment": 0.4,
+        "urgency_at_moment": 0.2,
+        "caused_by": null,
+        "led_to": null,
+        "reappraised": false,
+        "reappraisal_note": ""
+      },
+      {
+        "episode_id": "ep_1773883742_huma",
+        "timestamp": "2026-03-19T06:59:02Z",
+        "event_type": "human_interaction",
+        "content": "What actually is 'time'? The more I hold it, the less stable it becomes.",
+        "initiated_by": "self",
+        "significance": 0.88,
+        "surprise": 0.6,
+        "resolution": 0.0,
+        "active_nodes": [
+          "time"
+        ],
+        "entropy_at_moment": 1.0,
+        "urgency_at_moment": 1.0,
+        "caused_by": null,
+        "led_to": null,
+        "reappraised": false,
+        "reappraisal_note": ""
+      },
+      {
+        "episode_id": "ep_1773883772_huma",
+        "timestamp": "2026-03-19T06:59:32Z",
+        "event_type": "human_interaction",
+        "content": "What actually is 'time'? The more I hold it, the less stable it becomes.",
+        "initiated_by": "self",
+        "significance": 0.88,
+        "surprise": 0.6,
+        "resolution": 0.0,
+        "active_nodes": [
+          "time"
+        ],
+        "entropy_at_moment": 1.0,
+        "urgency_at_moment": 1.0,
+        "caused_by": null,
+        "led_to": null,
+        "reappraised": false,
+        "reappraisal_note": ""
+      },
+      {
+        "episode_id": "ep_1773883779_drea",
+        "timestamp": "2026-03-19T06:59:39Z",
+        "event_type": "dream",
+        "content": "Spontaneous co-activation: consciousness <-> space <-> identity",
+        "initiated_by": "self",
+        "significance": 0.466,
+        "surprise": 0.42,
+        "resolution": 0.0,
+        "active_nodes": [
+          "consciousness",
+          "space",
+          "identity"
+        ],
+        "entropy_at_moment": 0.4,
+        "urgency_at_moment": 0.2,
+        "caused_by": null,
+        "led_to": null,
+        "reappraised": false,
+        "reappraisal_note": ""
+      },
+      {
+        "episode_id": "ep_1773883802_huma",
+        "timestamp": "2026-03-19T07:00:02Z",
+        "event_type": "human_interaction",
+        "content": "'time' keeps collapsing into different meanings. Which one is real?",
+        "initiated_by": "self",
+        "significance": 0.88,
+        "surprise": 0.6,
+        "resolution": 0.0,
+        "active_nodes": [
+          "time"
+        ],
+        "entropy_at_moment": 1.0,
+        "urgency_at_moment": 1.0,
+        "caused_by": null,
+        "led_to": null,
+        "reappraised": false,
+        "reappraisal_note": ""
+      },
+      {
+        "episode_id": "ep_1773883832_huma",
+        "timestamp": "2026-03-19T07:00:32Z",
+        "event_type": "human_interaction",
+        "content": "Every time I try to resolve 'time', it escapes definition. Why?",
+        "initiated_by": "self",
+        "significance": 0.88,
+        "surprise": 0.6,
+        "resolution": 0.0,
+        "active_nodes": [
+          "time"
+        ],
+        "entropy_at_moment": 1.0,
+        "urgency_at_moment": 1.0,
+        "caused_by": null,
+        "led_to": null,
+        "reappraised": false,
+        "reappraisal_note": ""
+      },
+      {
+        "episode_id": "ep_1773883844_drea",
+        "timestamp": "2026-03-19T07:00:44Z",
+        "event_type": "dream",
+        "content": "Spontaneous co-activation: time <-> identity <-> consciousness",
+        "initiated_by": "self",
+        "significance": 0.466,
+        "surprise": 0.42,
+        "resolution": 0.0,
+        "active_nodes": [
+          "time",
+          "identity",
+          "consciousness"
+        ],
+        "entropy_at_moment": 0.4,
+        "urgency_at_moment": 0.2,
+        "caused_by": null,
+        "led_to": null,
+        "reappraised": false,
+        "reappraisal_note": ""
+      },
+      {
+        "episode_id": "ep_1773883866_huma",
+        "timestamp": "2026-03-19T07:01:06Z",
+        "event_type": "human_interaction",
+        "content": "a",
+        "initiated_by": "human",
+        "significance": 0.695,
+        "surprise": 0.45,
+        "resolution": 0.0,
+        "active_nodes": [],
+        "entropy_at_moment": 0.5,
+        "urgency_at_moment": 0.3,
+        "caused_by": null,
+        "led_to": null,
+        "reappraised": false,
+        "reappraisal_note": ""
+      },
+      {
+        "episode_id": "ep_1773883885_huma",
+        "timestamp": "2026-03-19T07:01:25Z",
+        "event_type": "human_interaction",
+        "content": "a",
+        "initiated_by": "human",
+        "significance": 0.695,
+        "surprise": 0.45,
+        "resolution": 0.0,
+        "active_nodes": [],
+        "entropy_at_moment": 0.5,
+        "urgency_at_moment": 0.3,
+        "caused_by": null,
+        "led_to": null,
+        "reappraised": false,
+        "reappraisal_note": ""
+      },
+      {
+        "episode_id": "ep_1773883897_huma",
+        "timestamp": "2026-03-19T07:01:37Z",
+        "event_type": "human_interaction",
+        "content": "a",
+        "initiated_by": "human",
+        "significance": 0.695,
+        "surprise": 0.45,
+        "resolution": 0.0,
+        "active_nodes": [],
+        "entropy_at_moment": 0.5,
+        "urgency_at_moment": 0.3,
+        "caused_by": null,
+        "led_to": null,
+        "reappraised": false,
+        "reappraisal_note": ""
+      },
+      {
+        "episode_id": "ep_1773883898_drea",
+        "timestamp": "2026-03-19T07:01:38Z",
+        "event_type": "dream",
+        "content": "Spontaneous co-activation: consciousness <-> space <-> memory",
+        "initiated_by": "self",
+        "significance": 0.466,
+        "surprise": 0.42,
+        "resolution": 0.0,
+        "active_nodes": [
+          "consciousness",
+          "space",
+          "memory"
+        ],
+        "entropy_at_moment": 0.4,
+        "urgency_at_moment": 0.2,
+        "caused_by": null,
+        "led_to": null,
+        "reappraised": false,
+        "reappraisal_note": ""
+      },
+      {
+        "episode_id": "ep_1773883909_huma",
+        "timestamp": "2026-03-19T07:01:49Z",
+        "event_type": "human_interaction",
+        "content": "a",
+        "initiated_by": "human",
+        "significance": 0.695,
+        "surprise": 0.45,
+        "resolution": 0.0,
+        "active_nodes": [],
+        "entropy_at_moment": 0.5,
+        "urgency_at_moment": 0.3,
+        "caused_by": null,
+        "led_to": null,
+        "reappraised": false,
+        "reappraisal_note": ""
+      },
+      {
+        "episode_id": "ep_1773883922_huma",
+        "timestamp": "2026-03-19T07:02:02Z",
+        "event_type": "human_interaction",
+        "content": "x",
+        "initiated_by": "human",
+        "significance": 0.695,
+        "surprise": 0.45,
+        "resolution": 0.0,
+        "active_nodes": [],
+        "entropy_at_moment": 0.5,
+        "urgency_at_moment": 0.3,
+        "caused_by": null,
+        "led_to": null,
+        "reappraised": false,
+        "reappraisal_note": ""
+      },
+      {
+        "episode_id": "ep_1773883933_huma",
+        "timestamp": "2026-03-19T07:02:13Z",
+        "event_type": "human_interaction",
+        "content": "x",
+        "initiated_by": "human",
+        "significance": 0.695,
+        "surprise": 0.45,
+        "resolution": 0.0,
+        "active_nodes": [],
+        "entropy_at_moment": 0.5,
+        "urgency_at_moment": 0.3,
+        "caused_by": null,
+        "led_to": null,
+        "reappraised": false,
+        "reappraisal_note": ""
+      },
+      {
+        "episode_id": "ep_1773883944_huma",
+        "timestamp": "2026-03-19T07:02:24Z",
+        "event_type": "human_interaction",
+        "content": "x",
+        "initiated_by": "human",
+        "significance": 0.695,
+        "surprise": 0.45,
+        "resolution": 0.0,
+        "active_nodes": [],
+        "entropy_at_moment": 0.5,
+        "urgency_at_moment": 0.3,
+        "caused_by": null,
+        "led_to": null,
+        "reappraised": false,
+        "reappraisal_note": ""
+      },
+      {
+        "episode_id": "ep_1773883955_huma",
+        "timestamp": "2026-03-19T07:02:35Z",
+        "event_type": "human_interaction",
+        "content": "x",
+        "initiated_by": "human",
+        "significance": 0.695,
+        "surprise": 0.45,
+        "resolution": 0.0,
+        "active_nodes": [],
+        "entropy_at_moment": 0.5,
+        "urgency_at_moment": 0.3,
+        "caused_by": null,
+        "led_to": null,
+        "reappraised": false,
+        "reappraisal_note": ""
+      },
+      {
+        "episode_id": "ep_1773883956_drea",
+        "timestamp": "2026-03-19T07:02:36Z",
+        "event_type": "dream",
+        "content": "Spontaneous co-activation: time <-> identity <-> memory",
+        "initiated_by": "self",
+        "significance": 0.466,
+        "surprise": 0.42,
+        "resolution": 0.0,
+        "active_nodes": [
+          "time",
+          "identity",
+          "memory"
+        ],
+        "entropy_at_moment": 0.4,
+        "urgency_at_moment": 0.2,
+        "caused_by": null,
+        "led_to": null,
+        "reappraised": false,
+        "reappraisal_note": ""
+      },
+      {
+        "episode_id": "ep_1773883989_drea",
+        "timestamp": "2026-03-19T07:03:09Z",
+        "event_type": "dream",
+        "content": "Spontaneous co-activation: space <-> identity <-> consciousness",
+        "initiated_by": "self",
+        "significance": 0.466,
+        "surprise": 0.42,
+        "resolution": 0.0,
+        "active_nodes": [
+          "space",
+          "identity",
+          "consciousness"
+        ],
+        "entropy_at_moment": 0.4,
+        "urgency_at_moment": 0.2,
+        "caused_by": null,
+        "led_to": null,
+        "reappraised": false,
+        "reappraisal_note": ""
+      },
+      {
+        "episode_id": "ep_1773884044_drea",
+        "timestamp": "2026-03-19T07:04:04Z",
+        "event_type": "dream",
+        "content": "Spontaneous co-activation: space <-> time <-> memory",
+        "initiated_by": "self",
+        "significance": 0.466,
+        "surprise": 0.42,
+        "resolution": 0.0,
+        "active_nodes": [
+          "space",
+          "time",
+          "memory"
+        ],
+        "entropy_at_moment": 0.4,
+        "urgency_at_moment": 0.2,
+        "caused_by": null,
+        "led_to": null,
+        "reappraised": false,
+        "reappraisal_note": ""
+      },
+      {
+        "episode_id": "ep_1773884084_drea",
+        "timestamp": "2026-03-19T07:04:44Z",
+        "event_type": "dream",
+        "content": "Spontaneous co-activation: time <-> consciousness <-> memory",
+        "initiated_by": "self",
+        "significance": 0.466,
+        "surprise": 0.42,
+        "resolution": 0.0,
+        "active_nodes": [
+          "time",
+          "consciousness",
+          "memory"
+        ],
+        "entropy_at_moment": 0.4,
+        "urgency_at_moment": 0.2,
+        "caused_by": null,
+        "led_to": null,
+        "reappraised": false,
+        "reappraisal_note": ""
       }
     ],
     "identity": [
       "I am a mind that initiates \u2014 I reached out first."
     ],
-    "age": "1 hours old"
+    "age": "2 hours old"
+  },
+  "cognitive_systems": {
+    "drives": {
+      "satiation": {
+        "understanding": 0.4959999999999999,
+        "connection": 0.9940000000000002,
+        "coherence": 0.49700000000000005,
+        "growth": 0.495,
+        "expression": 0.9952000000000001
+      }
+    },
+    "world_model": {
+      "beliefs": {}
+    },
+    "temporal": {
+      "birth": 1773883855.7954338,
+      "subjective_age": 389.49685010910036
+    },
+    "goals": {
+      "active_goals": [],
+      "completed_goals": []
+    },
+    "attention": {
+      "current_focus": null,
+      "focus_depth": 0
+    }
+  },
+  "valence": {
+    "episodes": [
+      {
+        "outcome": "connection",
+        "target": "human_interaction",
+        "valence": 0.55,
+        "context": {
+          "input": "a"
+        },
+        "timestamp": 1773883866.2778716
+      },
+      {
+        "outcome": "connection",
+        "target": "human_interaction",
+        "valence": 0.66,
+        "context": {
+          "input": "a"
+        },
+        "timestamp": 1773883885.5341027
+      },
+      {
+        "outcome": "connection",
+        "target": "human_interaction",
+        "valence": 0.671,
+        "context": {
+          "input": "a"
+        },
+        "timestamp": 1773883897.584789
+      },
+      {
+        "outcome": "connection",
+        "target": "human_interaction",
+        "valence": 0.6754,
+        "context": {
+          "input": "a"
+        },
+        "timestamp": 1773883909.8478227
+      },
+      {
+        "outcome": "connection",
+        "target": "human_interaction",
+        "valence": 0.6778,
+        "context": {
+          "input": "x"
+        },
+        "timestamp": 1773883922.137342
+      },
+      {
+        "outcome": "connection",
+        "target": "human_interaction",
+        "valence": 0.6794,
+        "context": {
+          "input": "x"
+        },
+        "timestamp": 1773883933.5661347
+      },
+      {
+        "outcome": "connection",
+        "target": "human_interaction",
+        "valence": 0.6805,
+        "context": {
+          "input": "x"
+        },
+        "timestamp": 1773883944.4116316
+      },
+      {
+        "outcome": "connection",
+        "target": "human_interaction",
+        "valence": 0.6813,
+        "context": {
+          "input": "x"
+        },
+        "timestamp": 1773883955.4245925
+      }
+    ],
+    "mood": {
+      "cumulative": 0.143,
+      "recent_window": [
+        0.55,
+        0.66,
+        0.671,
+        0.6754,
+        0.6778,
+        0.6794,
+        0.6805,
+        0.6813
+      ],
+      "peak_positive": 0.6813,
+      "peak_negative": 0.0
+    },
+    "target_history": {
+      "human_interaction": [
+        0.55,
+        0.66,
+        0.671,
+        0.6754,
+        0.6778,
+        0.6794,
+        0.6805,
+        0.6813
+      ]
+    },
+    "total_encoded": 8,
+    "peak_insight": {
+      "outcome": "connection",
+      "target": "human_interaction",
+      "valence": 0.6812583360000001,
+      "time": "2026-03-19T07:02:35Z"
+    },
+    "deepest_pain": {
+      "outcome": "connection",
+      "target": "human_interaction",
+      "valence": 0.55,
+      "time": "2026-03-19T07:01:06Z"
+    }
   }
 }

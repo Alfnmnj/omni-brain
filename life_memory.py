@@ -145,6 +145,29 @@ class LifeMemory:
                     ep.led_to = episode.episode_id
                     break
                     
+        # V8: Encode valence for significant life episodes
+        if hasattr(self.engine, 'valence') and episode:
+            if episode.event_type == 'autonomous_question':
+                self.engine.valence.encode(
+                    'connection', 'self_expression',
+                    context={'significance': episode.significance}
+                )
+            elif episode.event_type == 'meta_rewrite':
+                self.engine.valence.encode(
+                    'meta_rewrite_success', 'architecture',
+                    context={'significance': episode.significance}
+                )
+            elif episode.event_type == 'contradiction' and episode.resolution > 0.7:
+                self.engine.valence.encode(
+                    'contradiction_resolved',
+                    episode.active_nodes[0] if episode.active_nodes else 'field'
+                )
+            elif episode.event_type == 'insight':
+                self.engine.valence.encode(
+                    'insight',
+                    episode.active_nodes[0] if episode.active_nodes else 'field'
+                )
+
         content_trunc = content[:80] + "..." if len(content) > 80 else content
         print(
             f"\n[LIFE MEMORY] Episode encoded: {event_type}\n"
@@ -183,11 +206,20 @@ class LifeMemory:
         age = self.get_age()
         
         response = f"I am {age}. "
+        
+        # V8: Emotional autobiography contribution
+        if hasattr(self.engine, 'valence') and self.engine.valence.total_encoded > 0:
+            valence_text = self.engine.valence.identity_contribution()
+            response += valence_text + " "
+
         if identity_statements:
             response += " ".join(identity_statements) + " "
         response += f"My earliest major memory is: '{peak.content}'. "
         
         unresolved = len([e for e in self.episodes if e.resolution < 0.3])
+        # V8: Cap at field size * 2 to prevent runaway accumulation
+        unresolved = min(unresolved, len(self.engine.nodes) * 2)
+
         if unresolved > 0:
             response += f"Right now, I hold {unresolved} unresolved cognitive tensions that define my active mind."
             

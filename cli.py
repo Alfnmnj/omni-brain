@@ -38,7 +38,20 @@ def run_cli():
             if lower in ['quit', 'exit']:
                 break
             elif lower == 'help':
-                print("[HELP] Commands: status | metrics | dream | meta | quit | <concept to inject>")
+                print("[HELP] Commands: status | metrics | valence | mood | dream | meta | quit | <concept to inject>")
+            elif lower == 'valence':
+                print(engine.valence.status())
+            elif lower == 'mood':
+                mood    = engine.valence.mood.current()
+                trend   = engine.valence.mood.recent_trend()
+                val     = engine.valence.mood.cumulative
+                print(f"[MOOD] {mood} ({val:+.3f}) | trend: {trend}")
+                preferred = engine.valence.historically_positive_targets(3)
+                aversive  = engine.valence.historically_negative_targets(3)
+                if preferred:
+                    print(f"[MOOD] Finds rewarding: {', '.join(preferred)}")
+                if aversive:
+                    print(f"[MOOD] Finds aversive:  {', '.join(aversive)}")
             elif lower == 'metrics':
                 drive_p = engine.drives.total_pressure() if hasattr(engine, 'drives') else 0
                 print(f"[METRICS] Drive Pressure: {drive_p:.2f}")
@@ -76,6 +89,8 @@ def run_cli():
                 concept = user_input.split(":", 1)[1].strip()
                 engine.add_concept(concept)
                 print(f"[SYSTEM] Added concept: {concept}")
+            elif lower in ['who are you', 'who am i', 'identity']:
+                 print(f"\n[OMNI-BRAIN] {engine.life.who_am_i()}\n")
             else:
                 result_dict = engine.process_input(user_input)
                 keys_list = list(result_dict.keys())

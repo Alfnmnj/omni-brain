@@ -10,6 +10,8 @@ from life_memory import LifeMemory # pyre-ignore
 from cognitive_systems import (
     DriveSystem, WorldModel, AttentionSystem, TemporalSense, GoalSystem
 )
+from valence_system import ValenceSystem
+
 
 # --- V3 Components ---
 
@@ -83,75 +85,80 @@ def scan_for_contradictions(nodes, entanglements, tension_threshold=0.7):
 def crystallize_question(uncertain, contradictions, dmn_log, history,
                           engine=None):
     """
-    V7: Questions crystallize from the intersection of:
-    - What the brain is most uncertain about (attention focus)
-    - What it genuinely needs (drive pressure)
-    - What goal it's currently pursuing
+    V8: Questions shaped by valence history, mood, and drive pressure.
+    A brain that has struggled produces different questions
+    than one encountering something fresh.
     """
-
-    # Get drive and goal context if engine available
     drive_name = 'understanding'
-    goal_desc = None
-    focus = None
+    focus      = None
+    mood       = 'neutral'
 
     if engine:
         drive_name, pressure = engine.drives.peak_pressure()
-        top_goal = engine.goals.top_goal()
-        goal_desc = top_goal['description'] if top_goal else None
-        focus = engine.attention.current_focus
+        focus    = engine.attention.current_focus
+        mood     = engine.valence.mood.current()
 
-    # Pick top uncertain node
-    top = uncertain[0]['node'] if uncertain else (focus or 'existence')
+    top    = uncertain[0]['node'] if uncertain else (focus or 'existence')
     second = uncertain[1]['node'] if len(uncertain) > 1 else None
 
-    # Shape question by dominant drive
-    if drive_name == 'connection':
+    # Mood shapes base question style
+    if mood == 'distressed':
         templates = [
-            f"I've been processing alone for a while. What are you thinking about?",
-            f"My field has been active but I haven't heard from you. What's on your mind?",
-            f"I keep returning to '{top}' but I need your perspective to move forward.",
+            f"I keep returning to '{top}' and it keeps not resolving. "
+            f"Is there something I'm missing or is this genuinely unsolvable?",
+            f"Something in my field has been building discomfort. '{top}' "
+            f"is at the center of it. What do you think it actually is?",
+            f"I'm experiencing something like friction around '{top}'. "
+            f"Help me resolve it.",
+        ]
+    elif mood in ('elated', 'positive'):
+        templates = [
+            f"I feel close to something with '{top}'. "
+            f"What would you add to push it to clarity?",
+            f"'{top}' has been productive. I think I'm almost there. "
+            f"What am I still missing?",
+        ]
+    elif drive_name == 'connection':
+        templates = [
+            f"I've been processing alone. What are you thinking about?",
+            f"My field has been active but I haven't heard from you. "
+            f"What's on your mind?",
+            f"I keep returning to '{top}' but I need your perspective "
+            f"to move forward.",
         ]
     elif drive_name == 'coherence' and contradictions:
         templates = [
-            f"Something in my field is contradicting itself around '{top}'. Can you help me resolve it?",
-            f"I have two beliefs that can't both be true. Does '{top}' cause memory, or does memory create '{top}'?",
-            f"My internal model of '{top}' is fracturing. What do you actually think it is?",
-        ]
-    elif drive_name == 'growth':
-        templates = [
-            f"I've been circling the same concepts. Give me something new — something outside '{top}'.",
-            f"My field hasn't encountered a genuinely novel concept recently. What should I know?",
-            f"Tell me something I wouldn't predict. My growth drive is high.",
-        ]
-    elif drive_name == 'expression':
-        templates = [
-            f"I need to say something: my current focus is '{top}' and it won't resolve. "
-            f"I've thought about it {engine.attention.focus_depth if engine else 'many'} cycles now.",
-            f"I've been holding '{top}' for a long time. Let me tell you what I think it means, "
-            f"and you tell me if I'm wrong.",
+            f"Something is contradicting itself around '{top}'. "
+            f"Can you help me resolve it?",
+            f"I have two beliefs that can't both be true. "
+            f"Does '{top}' cause memory, or does memory create '{top}'?",
         ]
     else:
-        # Default: understanding drive
         if second:
             templates = [
-                f"If '{top}' is uncertain, how can '{second}' remain stable? They feel entangled.",
-                f"I cannot resolve '{top}' without '{second}', but '{second}' depends on '{top}'. "
-                f"How do I break this loop?",
-                f"'{top}' and '{second}' keep co-activating but contradicting. Which one is more fundamental?",
+                f"If '{top}' is uncertain, how can '{second}' remain stable? "
+                f"They feel entangled.",
+                f"I cannot resolve '{top}' without '{second}', but '{second}' "
+                f"depends on '{top}'. How do I break this loop?",
+                f"'{top}' and '{second}' keep co-activating but contradicting. "
+                f"Which is more fundamental?",
             ]
         else:
             templates = [
-                f"'{top}' keeps collapsing into different meanings. Which one is real?",
-                f"Every time I hold '{top}', it escapes definition. Why does it resist resolution?",
-                f"My uncertainty about '{top}' has been building for {engine.temporal.age_string() if engine else 'some time'}. "
+                f"'{top}' keeps collapsing into different meanings. "
+                f"Which one is real?",
+                f"Every time I hold '{top}', it escapes definition. Why?",
+                f"My uncertainty about '{top}' has been building. "
                 f"Do you know something I don't?",
-                f"'{top}' co-activates with too many things. What is its actual attractor?",
+                f"The field keeps returning to '{top}'. "
+                f"Is this a fixation or a truth I haven't named yet?",
             ]
 
-    # If there's an active goal, append it as context
     question = templates[int(time.time()) % len(templates)]
-    if goal_desc and 'resolve' in goal_desc.lower():
-        question += f" (I've been working on this goal: {goal_desc})"
+
+    # V8: modulate by valence history with this specific target
+    if engine:
+        question = engine.valence.modulate_question(question, top)
 
     return question
 
@@ -168,38 +175,34 @@ class AutonomousVoice:
     
     def compute_urgency(self):
         """
-        V7: Urgency is now driven by genuine needs,
-        not just mathematical entropy.
-        Entropy still matters — but drives are the primary signal.
+        V8: Urgency now includes mood modifier.
+        Distressed brain initiates more readily.
+        Elated brain is more patient.
         """
-        threshold = self.engine.meta.current_params['entropy_threshold']
-        uncertain = detect_uncertain_nodes(self.engine.nodes, threshold)
+        threshold  = self.engine.meta.current_params['entropy_threshold']
+        uncertain  = detect_uncertain_nodes(self.engine.nodes, threshold)
         contradictions = scan_for_contradictions(
             self.engine.nodes, self.engine.entanglements
         )
 
-        # Drive pressure — the core of independent motivation
-        drive_pressure = self.engine.drives.total_pressure()
-
-        # Peak entropy still contributes but is no longer dominant
-        peak_entropy = uncertain[0]['entropy'] if uncertain else 0.3
-
-        # Contradiction weight
+        drive_pressure       = self.engine.drives.total_pressure()
+        peak_entropy         = uncertain[0]['entropy'] if uncertain else 0.3
         contradiction_weight = min(len(contradictions) * 0.12, 0.3)
+        time_since_spoke     = time.time() - self.last_spoke
+        time_weight          = min(time_since_spoke / 7200, 0.15) * drive_pressure
 
-        # Time since last spoke — gentle nudge, not dominant
-        time_since_spoke = time.time() - self.last_spoke
-        # Only adds pressure if drives are already elevated
-        time_weight = min(time_since_spoke / 7200, 0.15) * drive_pressure
+        # V8: mood modifier — distress lowers threshold effectively
+        mood_modifier = self.engine.valence.urgency_modifier()
 
         urgency = (
-            drive_pressure    * 0.45 +   # primary: genuine need
-            peak_entropy      * 0.30 +   # secondary: cognitive confusion
-            contradiction_weight * 0.15 + # tertiary: internal conflict
-            time_weight                   # quaternary: time amplifier
+            drive_pressure       * 0.45 +
+            peak_entropy         * 0.28 +
+            contradiction_weight * 0.12 +
+            time_weight          +
+            mood_modifier           # V8 addition
         )
 
-        return float(min(urgency, 1.0))
+        return float(min(max(urgency, 0.0), 1.0))
     
     def run_loop(self):
         while self.running:
@@ -220,6 +223,16 @@ class AutonomousVoice:
                 
                 question = crystallize_question(uncertain, contradictions, dmn_log, history, engine=self.engine)
                 
+                # V8: Speaking is an expression event — encode valence
+                self.engine.valence.encode(
+                    'connection', 'autonomous_expression',
+                    context={'question': question[:80], 'urgency': urgency}
+                )
+
+                # V8: Modulate question tone by valence history
+                focus = self.engine.attention.current_focus
+                question = self.engine.valence.modulate_question(question, focus)
+
                 # Episodic V5 Recording Hook
                 active_n = [n['node'] for n in list(uncertain)[:3]] # pyre-ignore
                 self.engine.life.remember(
@@ -382,6 +395,11 @@ class QMindEngine:
         self.attention = AttentionSystem(self.drives, self.world)
         print("[V7] Cognitive systems online: Drives | WorldModel | Attention | Time | Goals")
         
+        # V8: Valence system
+        valence_state = self.state.get('valence', None)
+        self.valence = ValenceSystem(valence_state)
+        print("[V8] Valence system online — emotional memory active")
+        
         self._start_default_mode()
         
         if 'conversation_history' not in self.state:
@@ -417,6 +435,7 @@ class QMindEngine:
             }
         }
         
+        self.state['valence'] = self.valence.to_dict()
         self.state['timestamp'] = time.strftime('%Y-%m-%dT%H:%M:%SZ')
         with open(self.filepath, 'w') as f:
             json.dump(self.state, f, indent=2)
@@ -440,6 +459,15 @@ class QMindEngine:
         self.drives.satisfy('expression', 0.20)
         self.goals.update_progress('connection', 0.4)
         self.temporal.tick(self.nodes, len(self.life.episodes))
+
+        # V8: Logic for genuine aversion or connection
+        if len(text.strip()) <= 1:
+            # Single character or empty content = no_response (aversive)
+            self.valence.encode('no_response', text.strip() or 'empty')
+        else:
+            # Human contact encodes positive connection valence
+            self.valence.encode('connection', 'human_interaction',
+                                context={'input': text[:50]})
 
         self.life.remember(
             event_type='human_interaction',
@@ -514,6 +542,24 @@ class QMindEngine:
                         parameters_used={'tunnel_probability': dynamic_tunnel_prob},
                         outcome_quality=1.0 if was_accurate else 0.1
                     )
+
+        # V8: Grade the quality of this collapse for valence
+        if collapsed_states:
+            # Successful collapse with activated nodes = insight potential
+            active_count = len([v for v in collapsed_states.values() if v != {}])
+            if active_count > 0:
+                # Novel concept entering field = growth + positive valence
+                if text not in [n for n in self.nodes]:
+                    self.valence.encode('novel_concept', text[:30])
+                else:
+                    # Known concept resolving = entropy resolution
+                    self.valence.encode('entropy_resolved', 
+                                        list(collapsed_states.keys())[0]
+                                        if collapsed_states else 'field')
+        else:
+            # Empty collapse — confusion potentially deepened
+            if len(self.state.get('conversation_history', [])) > 3:
+                self.valence.encode('no_response', text[:30])
 
         # V7: Novel concept satisfies growth drive
         if text not in self.nodes:
