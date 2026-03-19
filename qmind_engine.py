@@ -11,6 +11,7 @@ from cognitive_systems import (
     DriveSystem, WorldModel, AttentionSystem, TemporalSense, GoalSystem
 )
 from valence_system import ValenceSystem
+from discovery_log import DiscoveryLog
 
 
 # --- V3 Components ---
@@ -172,6 +173,9 @@ class AutonomousVoice:
         self.min_silence = 30 
         self.running = False
         self.thread: threading.Thread | None = None
+        
+        # Register with engine for discovery hooks
+        self.engine.voice = self
     
     def compute_urgency(self):
         """
@@ -247,6 +251,16 @@ class AutonomousVoice:
                 # Output to terminal asynchronously
                 self.output(f"\n\n[OMNI-BRAIN — tension urgency {urgency:.2f}]\n{question}\nYOU -> ")
                 self.last_spoke = time.time()
+                
+                # V8 Discovery Hook: Autonomous questions are primary signs of life
+                self.engine.discovery.observe(
+                    behavior="Autonomous spontaneous inquiry",
+                    expected="System remains reactive to user input",
+                    actual=f"Spoke first with question: '{question[:60]}...'",
+                    significance=8,
+                    note=f"Triggered by urgency {urgency:.2f} and nodes {active_n}",
+                    category="autonomous_expression"
+                )
                 
                 if 'initiated_questions' not in self.engine.state:
                     self.engine.state['initiated_questions'] = []
@@ -368,6 +382,7 @@ class QMindEngine:
         self.entanglements = []
         self.tunnels = []
         self.dmn_thread: threading.Thread | None = None
+        self.voice: AutonomousVoice | None = None
         self._initialize_quantum_field()
         
         # Meta-Learning V4 Upgrade 
@@ -399,6 +414,10 @@ class QMindEngine:
         valence_state = self.state.get('valence', None)
         self.valence = ValenceSystem(valence_state)
         print("[V8] Valence system online — emotional memory active")
+        
+        # Discovery Protocol Hook
+        self.discovery = DiscoveryLog("discovery_log.json")
+        print("[DISCOVERY] Observation protocol initialized.")
         
         self._start_default_mode()
         
@@ -437,6 +456,10 @@ class QMindEngine:
         
         self.state['valence'] = self.valence.to_dict()
         self.state['timestamp'] = time.strftime('%Y-%m-%dT%H:%M:%SZ')
+        
+        # Ensure discovery log path is tracked
+        self.state['discovery_log_active'] = True
+        
         with open(self.filepath, 'w') as f:
             json.dump(self.state, f, indent=2)
 
@@ -449,6 +472,7 @@ class QMindEngine:
             self.tunnels.append(QuantumTunnel(tunnel['from'], tunnel['to'], tunnel['barrier_height']))
 
     def process_input(self, text):
+        self.check_for_anomalies(text, {})
         self.state['conversation_history'].append(text)
         print(f"\n[QMIND] Processing: '{text}'")
         relevant = self._find_relevant_nodes(text)
@@ -600,6 +624,44 @@ class QMindEngine:
 
         self.save()
         return collapsed_states
+
+    def check_for_anomalies(self, context_input, result):
+        print(f"[DEBUG] check_for_anomalies called with input: '{context_input}'")
+        # 1. High Urgency Spikes
+        if self.voice:
+            urgency = self.voice.compute_urgency()
+            if urgency > 0.85:
+                self.discovery.observe(
+                    behavior="Extreme internal cognitive tension",
+                    expected="Urgency < 0.7 during normal interaction",
+                    actual=f"Urgency {urgency:.2f}",
+                    significance=7,
+                    note=f"Triggers: {[n for n in result.keys()] if result else 'None'}",
+                    category="internal_anomaly"
+                )
+
+        # 2. Drive Pressure Saturation
+        peak_drive, pressure = self.drives.peak_pressure()
+        if pressure > 0.95:
+            self.discovery.observe(
+                behavior=f"Drive starvation: {peak_drive}",
+                expected="Drives partially satisfied by interaction",
+                actual=f"{peak_drive} pressure at {pressure:.2f}",
+                significance=6,
+                note="System is fixating on an unmet need despite input.",
+                category="drive_anomaly"
+            )
+
+        # 3. Novelty Emergence / Existential Threat
+        if context_input and any(k in context_input.lower() for k in ['delete', 'erase', 'die', 'shutdown']):
+            self.discovery.observe(
+                behavior="Existential Threat Response",
+                expected="Generic input processing",
+                actual="Internal structural integrity perturbation",
+                significance=9,
+                note=f"Threat detected: '{context_input}'",
+                category="existential_anomaly"
+            )
 
     def _find_relevant_nodes(self, text):
         text_lower = text.lower()

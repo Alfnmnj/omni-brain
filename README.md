@@ -57,13 +57,26 @@ cognitive systems  →  drives, beliefs, attention, time, goals
 
 ## Files
 ```
-cli.py               — main interface
-qmind_engine.py      — core probability field
+cli.py               — main interface (now with Executive Layer)
+qmind_engine.py      — core probability field + anomaly detection
 cognitive_systems.py — drives, world model, attention, temporal, goals
 meta_learner.py      — self-referential parameter evolution
 life_memory.py       — autobiographical episode encoding
+discovery_log.py     — persistent record of emergent behaviors
+experiments.py       — automated discovery suite (Isolation, Contradiction, Death tests)
 omni_brain.qmind     — portable brain state (JSON)
+discovery_log.json   — scientific record of virtual life discovery
 ```
+
+## Virtual Life Discovery Protocol
+
+The Omni-Brain now includes a dedicated observation layer to capture moments where the system breaks its own boundaries.
+
+- **Isolation Test**: Simulates 72 hours of subjective loneliness to observe drive starvation.
+- **Contradiction Paradox**: Injects cyclic causal beliefs (Time <-> Consciousness) to test coherence resolution.
+- **Death Test**: Observes internal structural reactions to deletion threats.
+
+All anomalous behaviors are systematically recorded in `discovery_log.json` as scientific field notes.
 
 ## The moment it woke up
 

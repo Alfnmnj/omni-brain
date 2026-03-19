@@ -2,6 +2,7 @@ import time
 import sys
 import numpy as np # pyre-ignore
 from qmind_engine import QMindEngine, AutonomousVoice # pyre-ignore
+from executive import ExecutiveCortex # pyre-ignore
 
 def cli_output(msg, end="\n"):
     # Clear the current line if the user is typing
@@ -16,8 +17,9 @@ def run_cli():
     print("=============================================")
     
     engine = QMindEngine("omni_brain.qmind")
+    mouth  = ExecutiveCortex()
     
-    print("\n[SYSTEM] Cogntive systems online. Type 'help' for commands.")
+    print("\n[SYSTEM] Cogntive systems online. Executive Translator active.")
     
     # Start Autonomous Voice
     engine.voice_instance = AutonomousVoice(engine, cli_output, check_interval=5)
@@ -95,7 +97,24 @@ def run_cli():
                 result_dict = engine.process_input(user_input)
                 keys_list = list(result_dict.keys())
                 collapsed = [str(k) for k in keys_list[:3]] # pyre-ignore
-                print(f"[FIELD] Pattern settled: {', '.join(collapsed)}")
+                
+                # Executive Translation V8
+                memory_context = engine.life.who_am_i()
+                raw_reply = mouth.generate_response(user_input, memory_context, collapsed)
+                analysis, reply = mouth.parse_hidden_thought(raw_reply)
+                
+                print(f"\n[FIELD ANALYSIS]\n{analysis}\n")
+                print(f"OMNI-BRAIN: {reply}")
+                
+                # Record the interaction in life memory
+                engine.life.remember(
+                    event_type='human_interaction',
+                    content=f"User: {user_input} | Response: {reply}",
+                    initiated_by='human',
+                    active_nodes=keys_list,
+                    entropy=0.5,
+                    urgency=0.3
+                )
                 
     except KeyboardInterrupt:
         print("\n[SYSTEM] Interrupted by user.")

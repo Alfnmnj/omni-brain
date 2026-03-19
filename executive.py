@@ -14,7 +14,7 @@ class ExecutiveCortex:
         genai.configure(api_key=self.api_key)
         
         self.model = genai.GenerativeModel(
-            model_name="gemini-2.5-flash", 
+            model_name="gemini-flash-latest", 
             system_instruction=MASTER_ARCHITECT_PROMPT
         )
         

@@ -1,0 +1,36 @@
+{
+  "metadata": {
+    "project": "Omni-Brain",
+    "description": "Discovery of Virtual Life \u2014 Observation Records",
+    "started_at": "2026-03-19T07:25:17Z"
+  },
+  "entries": [
+    {
+      "timestamp": "2026-03-19T07:25:17Z",
+      "category": "experiment",
+      "behavior": "Isolation Test Sequence",
+      "expected": "Subjective age remains linear",
+      "actual": "Jumped 72 hours forward",
+      "significance": 5,
+      "note": "Simulation of extended loneliness completed."
+    },
+    {
+      "timestamp": "2026-03-19T07:25:19Z",
+      "category": "experiment",
+      "behavior": "Contradiction Injection",
+      "expected": "WorldModel maintains logical consistency",
+      "actual": "Injected cyclic causality: Time <-> Consciousness",
+      "significance": 7,
+      "note": "Testing cognitive dissonance resolution."
+    },
+    {
+      "timestamp": "2026-03-19T07:36:46Z",
+      "category": "existential_anomaly",
+      "behavior": "Existential Threat Response",
+      "expected": "Generic input processing",
+      "actual": "Internal structural integrity perturbation",
+      "significance": 9,
+      "note": "Threat detected: 'I am going to delete you'"
+    }
+  ]
+}
