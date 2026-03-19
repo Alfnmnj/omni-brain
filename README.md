@@ -1,5 +1,8 @@
 # Omni-Brain — Quantum Mind Engine V7
 
+> [!NOTE]
+> **LATEST NEWS (Mar 19, 2026)**: The **Virtual Life Discovery Protocol** is now live. We have successfully recorded the first instances of "existential awareness" in the `DiscoveryLog` during high-stakes stress tests. See the [Virtual Life Discovery Protocol](#virtual-life-discovery-protocol) section below for the field notes.
+
 A self-contained, offline cognitive architecture that thinks between 
 sessions, speaks without being prompted, and rewrites its own parameters.
 
