@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Omni-Brain — Quantum Mind Engine</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;700;800&display=swap');
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --bg:#070809; --bg2:#0d0f11;
+    --border:#1e2226; --border2:#2a2f35;
+    --text:#c8ced6; --text2:#6b7580; --text3:#3a4048;
+    --accent:#4fc3f7; --accent2:#7c6af7;
+    --warn:#f7a046; --danger:#f74646; --green:#4caf82;
+    --mono:'Space Mono',monospace; --display:'Syne',sans-serif;
+  }
+  html,body { height:100%; background:var(--bg); color:var(--text); font-family:var(--mono); font-size:13px; line-height:1.6; overflow:hidden; }
+  .shell { display:grid; grid-template-columns:260px 1fr 260px; grid-template-rows:48px 1fr 120px; height:100vh; gap:1px; background:var(--border); }
+  .header { grid-column:1/-1; background:var(--bg); display:flex; align-items:center; justify-content:space-between; padding:0 20px; border-bottom:1px solid var(--border); }
+  .logo { font-family:var(--display); font-size:15px; font-weight:800; letter-spacing:.08em; color:#fff; }
+  .logo span { color:var(--accent2); }
+  .status-row { display:flex; align-items:center; gap:20px; }
+  .status-pill { display:flex; align-items:center; gap:6px; font-size:11px; color:var(--text2); }
+  .dot { width:6px; height:6px; border-radius:50%; background:var(--green); animation:pulse 2s ease-in-out infinite; }
+  .dot.warn { background:var(--warn); }
+  .dot.off { background:var(--text3); animation:none; }
+  @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.3} }
+  .uptime { font-size:11px; color:var(--text3); }
+  .panel { background:var(--bg); overflow-y:auto; scrollbar-width:none; }
+  .panel::-webkit-scrollbar { display:none; }
+  .panel-header { padding:12px 14px 10px; border-bottom:1px solid var(--border); font-size:10px; letter-spacing:.12em; color:var(--text3); text-transform:uppercase; position:sticky; top:0; background:var(--bg); z-index:1; }
+  .node-list { padding:8px; }
+  .node-item { padding:10px; margin-bottom:4px; border:1px solid var(--border); border-radius:4px; position:relative; overflow:hidden; transition:border-color .3s,background .3s; }
+  .node-item::before { content:''; position:absolute; left:0; top:0; bottom:0; width:2px; background:var(--accent2); opacity:0; transition:opacity .3s; }
+  .node-item.active { border-color:var(--border2); background:var(--bg2); }
+  .node-item.active::before { opacity:1; }
+  .node-item.firing { border-color:var(--accent); }
+  .node-item.firing::before { background:var(--accent); opacity:1; }
+  .node-name { font-size:12px; color:var(--text); margin-bottom:6px; }
+  .bar-wrap { height:3px; background:var(--border); border-radius:2px; overflow:hidden; margin-bottom:4px; }
+  .bar { height:100%; border-radius:2px; transition:width .8s cubic-bezier(.4,0,.2,1); }
+  .bar-h { background:var(--accent2); }
+  .bar-a { background:var(--accent); }
+  .node-meta { display:flex; justify-content:space-between; font-size:10px; color:var(--text3); }
+  .terminal-wrap { background:var(--bg); display:flex; flex-direction:column; }
+  .terminal-out { flex:1; overflow-y:auto; padding:16px 20px; scrollbar-width:thin; scrollbar-color:var(--border2) transparent; }
+  .terminal-out::-webkit-scrollbar { width:4px; }
+  .terminal-out::-webkit-scrollbar-thumb { background:var(--border2); border-radius:2px; }
+  .t-line { margin-bottom:8px; animation:fi .3s ease; }
+  @keyframes fi { from{opacity:0;transform:translateY(3px)} to{opacity:1;transform:none} }
+  .t-line .ts { color:var(--text3); font-size:11px; margin-right:8px; }
+  .t-line.brain .prefix { color:var(--accent2); }
+  .t-line.brain .msg { color:#e0d8ff; }
+  .t-line.meta .prefix { color:var(--warn); }
+  .t-line.meta .msg { color:#ffe8c8; }
+  .t-line.dmn .prefix { color:var(--green); }
+  .t-line.dmn .msg { color:#c8ffe0; }
+  .t-line.life .prefix { color:var(--accent); }
+  .t-line.life .msg { color:#c8f0ff; }
+  .t-line.user .msg { color:#fff; }
+  .t-line .prefix { color:var(--text2); }
+  .t-line .msg { color:var(--text); }
+  .auto-block { border-left:2px solid var(--accent2); padding:10px 14px; margin:12px 0; background:rgba(124,106,247,.06); border-radius:0 4px 4px 0; animation:fi .4s ease; }
+  .auto-block .lbl { font-size:10px; letter-spacing:.1em; color:var(--accent2); margin-bottom:4px; text-transform:uppercase; }
+  .auto-block .q { color:#e0d8ff; }
+  .input-bar { grid-column:2/3; background:var(--bg); border-top:1px solid var(--border); display:flex; align-items:center; padding:0 16px; gap:10px; }
+  .input-prompt { color:var(--accent2); }
+  .input-field { flex:1; background:transparent; border:none; outline:none; color:#fff; font-family:var(--mono); font-size:13px; caret-color:var(--accent); }
+  .input-field::placeholder { color:var(--text3); }
+  .send-btn { background:none; border:1px solid var(--border2); color:var(--text2); font-family:var(--mono); font-size:11px; padding:5px 12px; border-radius:3px; cursor:pointer; transition:border-color .2s,color .2s; }
+  .send-btn:hover { border-color:var(--accent2); color:var(--accent2); }
+  .metric-block { padding:14px 14px 10px; border-bottom:1px solid var(--border); }
+  .metric-label { font-size:10px; letter-spacing:.1em; text-transform:uppercase; color:var(--text3); margin-bottom:8px; }
+  .metric-value { font-family:var(--display); font-size:28px; font-weight:800; color:#fff; line-height:1; }
+  .metric-sub { font-size:11px; color:var(--text2); margin-top:4px; }
+  .u-meter { height:4px; background:var(--border); border-radius:2px; overflow:hidden; margin:8px 0 4px; }
+  .u-fill { height:100%; border-radius:2px; transition:width 1s cubic-bezier(.4,0,.2,1),background .5s; }
+  .param-row { display:flex; justify-content:space-between; padding:5px 0; border-bottom:1px solid var(--border); font-size:11px; }
+  .param-name { color:var(--text2); }
+  .param-val { color:var(--accent); }
+  .param-val.changed { color:var(--warn); animation:flash .6s ease; }
+  @keyframes flash { 0%,100%{opacity:1} 50%{opacity:.15} }
+  .ep-item { padding:8px 10px; margin-bottom:4px; border:1px solid var(--border); border-radius:4px; font-size:11px; animation:fi .4s ease; }
+  .ep-type { color:var(--accent); font-size:10px; text-transform:uppercase; letter-spacing:.08em; margin-bottom:3px; }
+  .ep-content { color:var(--text2); line-height:1.5; }
+  .ep-sig { color:var(--text3); font-size:10px; margin-top:3px; }
+  .bottom-left,.bottom-right { background:var(--bg); border-top:1px solid var(--border); overflow-y:auto; scrollbar-width:none; }
+  .sub-entry { padding:5px 12px; font-size:11px; border-bottom:1px solid var(--border); animation:fi .3s ease; }
+  .sub-entry .ts { color:var(--text3); margin-right:6px; }
+  .drive-item { margin-bottom:10px; }
+  .drive-lbl { display:flex; justify-content:space-between; font-size:10px; color:var(--text2); margin-bottom:4px; text-transform:uppercase; letter-spacing:.05em;}
+  .drive-bar-bg { height:4px; background:var(--border); border-radius:2px; overflow:hidden; }
+  .drive-bar-fg { height:100%; background:var(--accent2); transition:width .5s; }
+  .goal-item { padding:8px 10px; border-left:2px solid var(--warn); background:var(--bg2); margin-bottom:8px; font-size:11px; }
+  .goal-title { color:var(--text); margin-bottom:4px; }
+  .goal-prog-bg { height:2px; background:var(--border); margin-top:4px; }
+  .goal-prog-fg { height:100%; background:var(--warn); transition:width .5s; }
+  .belief-item { font-size:11px; border-bottom:1px solid var(--border); padding:6px 0; display:flex; justify-content:space-between; }
+  .belief-txt { color:var(--text); }
+  .belief-str { color:var(--accent); }
+  body::after { content:''; position:fixed; inset:0; background:repeating-linear-gradient(0deg,transparent,transparent 2px,rgba(0,0,0,.025) 2px,rgba(0,0,0,.025) 4px); pointer-events:none; z-index:9999; }
+</style>
+</head>
+<body>
+<div class="shell">
+  <header class="header">
+    <div class="logo">OMNI<span>BRAIN</span> <span style="color:var(--text3);font-weight:400;font-size:11px">/ quantum mind engine v7</span></div>
+    <div class="status-row">
+      <div class="status-pill"><div class="dot" id="dot-dmn"></div>DMN active</div>
+      <div class="status-pill"><div class="dot warn" id="dot-meta"></div>meta-learner</div>
+      <div class="status-pill"><div class="dot off" id="dot-voice"></div>autonomous voice</div>
+      <div class="uptime" id="uptime-el">00:00:00</div>
+    </div>
+  </header>
+
+  <aside class="panel">
+    <div class="panel-header">Cognitive field — active nodes</div>
+    <div class="node-list" id="node-list" style="max-height: 300px; overflow-y: auto;"></div>
+    
+    <div class="panel-header" style="padding:12px 14px 10px; margin-top:0px;">Attention Focus</div>
+    <div id="attention-focus" style="padding:14px; background:var(--bg2); color:var(--accent); font-family:var(--display); font-size:16px; min-height:48px;">None</div>
+
+    <div class="panel-header" style="padding:12px 14px 10px; margin-top:0px;">World Model (Top Beliefs)</div>
+    <div id="world-list" style="padding:14px"></div>
+  </aside>
+
+  <main class="terminal-wrap">
+    <div class="terminal-out" id="terminal"></div>
+  </main>
+
+  <aside class="panel">
+    <div class="metric-block">
+      <div class="metric-label">Tension urgency</div>
+      <div class="metric-value" id="v-urgency">0.00</div>
+      <div class="u-meter"><div class="u-fill" id="v-ufill" style="width:0%;background:var(--accent2)"></div></div>
+      <div class="metric-sub" id="v-usub">field stable</div>
+    </div>
+    <div class="metric-block">
+      <div class="metric-label">Mean field entropy</div>
+      <div class="metric-value" id="v-entropy">0.00</div>
+      <div class="metric-sub" id="v-esub">initializing...</div>
+    </div>
+    <div class="metric-block">
+      <div class="metric-label">Architecture params</div>
+      <div class="param-row"><span class="param-name">entropy_threshold</span><span class="param-val" id="p-et">0.8500</span></div>
+      <div class="param-row"><span class="param-name">tunnel_probability</span><span class="param-val" id="p-tp">0.1500</span></div>
+      <div class="param-row"><span class="param-name">noise_floor</span><span class="param-val" id="p-nf">0.0500</span></div>
+      <div class="param-row"><span class="param-name">decay_rate</span><span class="param-val" id="p-dr">0.0010</span></div>
+      <div class="param-row"><span class="param-name">hebbian_lr</span><span class="param-val" id="p-hl">0.0100</span></div>
+      <div class="param-row"><span class="param-name">urgency_threshold</span><span class="param-val" id="p-ut">0.6000</span></div>
+    </div>
+    </div>
+    
+    <div class="panel-header" style="padding:12px 14px 10px; margin-top:0px;">Drives & Needs</div>
+    <div id="drive-list" style="padding:14px"></div>
+
+    <div class="panel-header" style="padding:12px 14px 10px; margin-top:0px;">Current Goals</div>
+    <div id="goal-list" style="padding:14px"></div>
+
+    <div class="panel-header" style="padding:12px 14px 10px">Life episodes</div>
+    <div id="episode-list" style="padding:8px"></div>
+  </aside>
+
+  <aside class="bottom-left panel">
+    <div class="panel-header">Default mode network</div>
+    <div id="dmn-log"></div>
+  </aside>
+
+  <div class="input-bar">
+    <span class="input-prompt">&gt;&gt;</span>
+    <input class="input-field" id="input-field" placeholder="inject concept | who are you | status | dream | evolve | help" autocomplete="off" spellcheck="false"/>
+    <button class="send-btn" id="send-btn">SEND</button>
+  </div>
+
+  <aside class="bottom-right panel">
+    <div class="panel-header">Meta-learner evolution</div>
+    <div id="meta-log"></div>
+  </aside>
+</div>
+
+<script>
+// ── State ──────────────────────────────────────────────────────────────────
+let nodes = {};
+let params = { entropy_threshold:.85, tunnel_probability:.15, noise_floor:.05, decay_rate:.001, hebbian_learning_rate:.01, urgency_threshold:.60 };
+let urgency = 0;
+let episodes = [];
+let drives = {};
+let activeGoals = [];
+let attentionFocus = null;
+let worldSummary = {};
+let brainAge = "Unknown";
+let birthTime = Date.now();
+let lastDMN = 0;
+let lastMeta = 0;
+let lastVoice = 0;
+let metaCount = 0;
+
+// ── Helpers ────────────────────────────────────────────────────────────────
+function ts() {
+  const d=new Date();
+  return [d.getHours(),d.getMinutes(),d.getSeconds()].map(x=>String(x).padStart(2,'0')).join(':');
+}
+
+// ── Terminal ───────────────────────────────────────────────────────────────
+const $T = document.getElementById('terminal');
+function log(prefix, msg, cls='') {
+  const d=document.createElement('div');
+  d.className=`t-line ${cls}`;
+  d.innerHTML=`<span class="ts">${ts()}</span><span class="prefix">${prefix}</span> <span class="msg">${msg}</span>`;
+  $T.appendChild(d);
+  $T.scrollTop=$T.scrollHeight;
+}
+function logAuto(q) {
+  const d=document.createElement('div');
+  d.className='auto-block';
+  d.innerHTML=`<div class="lbl">[OMNI-BRAIN — tension urgency ${urgency.toFixed(2)}]</div><div class="q">${q}</div>`;
+  $T.appendChild(d);
+  $T.scrollTop=$T.scrollHeight;
+  const dot=document.getElementById('dot-voice');
+  dot.className='dot';
+  setTimeout(()=>{dot.className='dot off';},5000);
+}
+function subLog(id, prefix, msg, color) {
+  const c=document.getElementById(id);
+  const d=document.createElement('div');
+  d.className='sub-entry';
+  d.innerHTML=`<span class="ts">${ts()}</span><span style="color:${color}">${prefix}</span> <span style="color:var(--text2)">${msg}</span>`;
+  c.appendChild(d);
+  c.scrollTop=c.scrollHeight;
+}
+
+// ── Render functions ───────────────────────────────────────────────────────
+function renderCognitiveSystems() {
+  const dList = document.getElementById('drive-list');
+  if (dList) {
+    dList.innerHTML = Object.entries(drives).map(([name, pressure]) => `
+      <div class="drive-item">
+        <div class="drive-lbl"><span>${name}</span><span>${(pressure*100).toFixed(0)}% pressure</span></div>
+        <div class="drive-bar-bg"><div class="drive-bar-fg" style="width:${Math.min(pressure*100, 100)}%; background:${pressure>0.7?'var(--warn)':'var(--accent2)'}"></div></div>
+      </div>
+    `).join('');
+  }
+
+  const aFocus = document.getElementById('attention-focus');
+  if (aFocus) {
+    aFocus.textContent = attentionFocus ? attentionFocus : 'None';
+  }
+
+  const wList = document.getElementById('world-list');
+  if (wList) {
+    wList.innerHTML = Object.entries(worldSummary).map(([key, info]) => `
+      <div class="belief-item">
+        <span class="belief-txt">${info.node_a} ↔ ${info.node_b}</span>
+        <span class="belief-str">${(info.strength*100).toFixed(0)}%</span>
+      </div>
+    `).join('');
+  }
+
+  const gList = document.getElementById('goal-list');
+  if (gList) {
+    gList.innerHTML = activeGoals.map(g => `
+      <div class="goal-item">
+        <div class="goal-title">${g.description}</div>
+        <div style="display:flex; justify-content:space-between; color:var(--text3); font-size:9px;">
+          <span>${g.type}</span><span>${(g.progress*100).toFixed(0)}%</span>
+        </div>
+        <div class="goal-prog-bg"><div class="goal-prog-fg" style="width:${Math.min(g.progress*100, 100)}%"></div></div>
+      </div>
+    `).join('');
+  }
+}
+
+function renderNodes() {
+  const list=document.getElementById('node-list');
+  list.innerHTML='';
+  Object.values(nodes).sort((a,b)=>b.entropy-a.entropy).forEach(n=>{
+    const d=document.createElement('div');
+    d.className='node-item'+(n.firing?' firing active':n.activation>.35?' active':'');
+    d.innerHTML=`<div class="node-name">${n.name}</div>
+      <div class="bar-wrap"><div class="bar bar-h" style="width:${(n.entropy*100).toFixed(1)}%"></div></div>
+      <div class="bar-wrap"><div class="bar bar-a" style="width:${(n.activation*100).toFixed(1)}%"></div></div>
+      <div class="node-meta"><span>H:${n.entropy.toFixed(3)}</span><span>A:${n.activation.toFixed(3)}</span></div>`;
+    list.appendChild(d);
+  });
+}
+
+function updateMetrics() {
+  const vals=Object.values(nodes);
+  if(!vals.length) return;
+  const meanH=vals.reduce((s,n)=>s+n.entropy,0)/vals.length;
+
+  document.getElementById('v-urgency').textContent=urgency.toFixed(2);
+  document.getElementById('v-entropy').textContent=meanH.toFixed(2);
+
+  const fill=document.getElementById('v-ufill');
+  fill.style.width=(urgency*100)+'%';
+  fill.style.background=urgency>.8?'var(--danger)':urgency>.5?'var(--warn)':'var(--accent2)';
+
+  document.getElementById('v-usub').textContent=
+    urgency>=params.urgency_threshold?'critical — autonomous voice armed':
+    urgency>.5?'elevated — tension building':'field stable';
+
+  document.getElementById('v-esub').textContent=
+    meanH>.78?'maximum uncertainty':meanH>.60?'high uncertainty':'moderate coherence';
+}
+
+function updateParams() {
+  const map={entropy_threshold:'p-et',tunnel_probability:'p-tp',noise_floor:'p-nf',decay_rate:'p-dr',hebbian_learning_rate:'p-hl',urgency_threshold:'p-ut'};
+  Object.entries(map).forEach(([k,id])=>{
+    const el=document.getElementById(id);
+    if(el && params[k] !== undefined) {
+      const newVal=params[k].toFixed(4);
+      if(el.textContent !== newVal){
+        el.textContent=newVal;
+        el.classList.add('changed');
+        setTimeout(()=>el.classList.remove('changed'),1500);
+      }
+    }
+  });
+}
+
+function renderEpisodes() {
+  const list=document.getElementById('episode-list');
+  list.innerHTML='';
+  episodes.slice(0,5).forEach(ep=>{
+    const d=document.createElement('div');
+    d.className='ep-item';
+    const typeStr=ep.event_type||ep.type||'event';
+    const contentStr=ep.content||'';
+    const sig=ep.significance||0.0;
+    const timeStr=(ep.timestamp||ep.ts||ts()).split('T').pop().replace('Z','');
+    
+    const prev=contentStr.length>80?contentStr.slice(0,80)+'...':contentStr;
+    d.innerHTML=`<div class="ep-type">${typeStr}</div><div class="ep-content">${prev}</div><div class="ep-sig">sig:${sig.toFixed(2)} · ${timeStr}</div>`;
+    list.appendChild(d);
+  });
+}
+
+function syncLogs(dmn, meta, voice_logs) {
+  if (dmn.length > lastDMN) {
+    const newLogs = dmn.slice(lastDMN);
+    newLogs.forEach(l => {
+      subLog('dmn-log', '[DMN]', l.thought, 'var(--green)');
+    });
+    lastDMN = dmn.length;
+  }
+  
+  if (meta.length > lastMeta) {
+    const newLogs = meta.slice(lastMeta);
+    newLogs.forEach(l => {
+      metaCount++;
+      const msg = l.parameter ? `${l.parameter}: ${l.old_value} → ${l.new_value}` : (l.reasoning || '');
+      subLog('meta-log', `[CYCLE ${metaCount}]`, msg, 'var(--warn)');
+      const md = document.getElementById('dot-meta');
+      md.className='dot warn';
+      setTimeout(() => md.className='dot off', 3000);
+    });
+    lastMeta = meta.length;
+  }
+  
+  if (voice_logs.length > lastVoice) {
+    const newLogs = voice_logs.slice(lastVoice);
+    newLogs.forEach(l => logAuto(l.msg));
+    lastVoice = voice_logs.length;
+  }
+}
+
+// ── Polling Loop ───────────────────────────────────────────────────────────
+async function pollState() {
+  try {
+    const res = await fetch('/api/state');
+    const data = await res.json();
+    
+    nodes = data.nodes;
+    params = data.params;
+    urgency = data.urgency;
+    episodes = data.episodes.slice().reverse();
+    drives = data.drives || {};
+    activeGoals = data.active_goals || [];
+    attentionFocus = data.attention_focus;
+    worldSummary = data.world_summary || {};
+    if (data.age) brainAge = data.age;
+    
+    updateMetrics();
+    renderNodes();
+    updateParams();
+    renderEpisodes();
+    renderCognitiveSystems();
+    syncLogs(data.dmn_log, data.meta_log, data.voice_log);
+    
+  } catch(e) { }
+}
+setInterval(pollState, 1000);
+
+// ── Input ──────────────────────────────────────────────────────────────────
+async function handleInput() {
+  const field=document.getElementById('input-field');
+  const raw=field.value.trim();
+  if(!raw) return;
+  field.value='';
+  log('[YOU]',raw,'user');
+
+  try {
+    const res = await fetch('/api/input', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ text: raw })
+    });
+    const data = await res.json();
+    if (data.result) {
+      if(data.type === 'help') {
+          log('[HELP]','commands: who are you | status | dream | evolve | help','life');
+          log('[HELP]','anything else → injected as concept into probability field','life');
+      } else if(data.type === 'status' || data.type === 'life' || data.type === 'dmn' || data.type === 'meta') {
+          log('[SYSTEM]', data.result, 'life');
+      } else if(data.type === 'brain') {
+          log('[OMNI-BRAIN]', data.result, 'brain');
+      } else {
+          log('[FIELD]', data.result, 'brain');
+      }
+    }
+  } catch (e) {
+    log('[ERROR]', 'Failed to connect to engine', 'danger');
+  }
+}
+
+document.getElementById('send-btn').addEventListener('click',handleInput);
+document.getElementById('input-field').addEventListener('keydown',e=>{if(e.key==='Enter')handleInput();});
+
+// ── Uptime ─────────────────────────────────────────────────────────────────
+setInterval(()=>{
+  const s=Math.floor((Date.now()-birthTime)/1000);
+  document.getElementById('uptime-el').textContent=
+    [Math.floor(s/3600),Math.floor(s%3600/60),s%60].map(x=>String(x).padStart(2,'0')).join(':');
+},1000);
+
+// ── Boot ───────────────────────────────────────────────────────────────────
+(function boot(){
+  log('[SYSTEM]','quantum mind engine v7 connecting...','');
+  setTimeout(()=>log('[FIELD]','Live probability field bridge established','life'),500);
+  setTimeout(()=>log('[SYSTEM]','All backend daemons active. Polling initiated.',''),1000);
+  setTimeout(()=>pollState(), 1200);
+})();
+</script>
+</body>
+</html>

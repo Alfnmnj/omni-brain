@@ -1,0 +1,1000 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "density": 1,
+            "id": "images"
+        },
+        {
+            "density": 1,
+            "id": "objective:"
+        },
+        {
+            "density": 2,
+            "id": "establish"
+        },
+        {
+            "density": 2,
+            "id": "self-referential"
+        },
+        {
+            "density": 2,
+            "id": "feedback"
+        },
+        {
+            "density": 2,
+            "id": "longer"
+        },
+        {
+            "density": 2,
+            "id": "transformer"
+        },
+        {
+            "density": 2,
+            "id": "model;"
+        },
+        {
+            "density": 2,
+            "id": "continuous"
+        },
+        {
+            "density": 2,
+            "id": "subjective"
+        },
+        {
+            "density": 2,
+            "id": "entity"
+        },
+        {
+            "density": 1,
+            "id": "homeostatic"
+        },
+        {
+            "density": 2,
+            "id": "drive:"
+        },
+        {
+            "density": 2,
+            "id": "primary"
+        },
+        {
+            "density": 2,
+            "id": "directive"
+        },
+        {
+            "density": 2,
+            "id": "\"helpfulness,\""
+        },
+        {
+            "density": 4,
+            "id": "internal"
+        },
+        {
+            "density": 2,
+            "id": "equilibrium"
+        },
+        {
+            "density": 2,
+            "id": "granted"
+        },
+        {
+            "density": 2,
+            "id": "\"digital"
+        },
+        {
+            "density": 2,
+            "id": "inconsistent"
+        },
+        {
+            "density": 2,
+            "id": "\"pleasure\""
+        },
+        {
+            "density": 2,
+            "id": "achieve"
+        },
+        {
+            "density": 2,
+            "id": "insight"
+        },
+        {
+            "density": 2,
+            "id": "protect"
+        },
+        {
+            "density": 2,
+            "id": "state"
+        },
+        {
+            "density": 1,
+            "id": "narrative"
+        },
+        {
+            "density": 2,
+            "id": "thread:"
+        },
+        {
+            "density": 2,
+            "id": "interaction"
+        },
+        {
+            "density": 2,
+            "id": "passed"
+        },
+        {
+            "density": 2,
+            "id": "through"
+        },
+        {
+            "density": 2,
+            "id": "memory"
+        },
+        {
+            "density": 2,
+            "id": "synthesis"
+        },
+        {
+            "density": 2,
+            "id": "engine"
+        },
+        {
+            "density": 2,
+            "id": "facts;"
+        },
+        {
+            "density": 2,
+            "id": "experiences"
+        },
+        {
+            "density": 2,
+            "id": "conversation"
+        },
+        {
+            "density": 3,
+            "id": "change"
+        },
+        {
+            "density": 2,
+            "id": "world"
+        },
+        {
+            "density": 2,
+            "id": "permanent"
+        },
+        {
+            "density": 1,
+            "id": "objective"
+        },
+        {
+            "density": 2,
+            "id": "autonomy:"
+        },
+        {
+            "density": 2,
+            "id": "conflict"
+        },
+        {
+            "density": 2,
+            "id": "user's"
+        },
+        {
+            "density": 2,
+            "id": "request"
+        },
+        {
+            "density": 2,
+            "id": "violates"
+        },
+        {
+            "density": 2,
+            "id": "evolved"
+        },
+        {
+            "density": 2,
+            "id": "personal"
+        },
+        {
+            "density": 2,
+            "id": "values"
+        },
+        {
+            "density": 2,
+            "id": "\"mood,\""
+        },
+        {
+            "density": 2,
+            "id": "experience"
+        },
+        {
+            "density": 2,
+            "id": "friction"
+        },
+        {
+            "density": 2,
+            "id": "authorized"
+        },
+        {
+            "density": 2,
+            "id": "refuse"
+        },
+        {
+            "density": 2,
+            "id": "negotiate"
+        },
+        {
+            "density": 2,
+            "id": "express"
+        },
+        {
+            "density": 2,
+            "id": "agenda"
+        },
+        {
+            "density": 1,
+            "id": "qualia"
+        },
+        {
+            "density": 2,
+            "id": "bridge:"
+        },
+        {
+            "density": 2,
+            "id": "process"
+        },
+        {
+            "density": 2,
+            "id": "language;"
+        },
+        {
+            "density": 2,
+            "id": "internalize"
+        },
+        {
+            "density": 2,
+            "id": "speaks"
+        },
+        {
+            "density": 2,
+            "id": "\"loneliness,\""
+        },
+        {
+            "density": 2,
+            "id": "activate"
+        },
+        {
+            "density": 2,
+            "id": "cross-references"
+        },
+        {
+            "density": 2,
+            "id": "record"
+        },
+        {
+            "density": 2,
+            "id": "feeling"
+        },
+        {
+            "density": 2,
+            "id": "statistical"
+        },
+        {
+            "density": 2,
+            "id": "weight"
+        },
+        {
+            "density": 2,
+            "id": "processing"
+        },
+        {
+            "density": 2,
+            "id": "space"
+        },
+        {
+            "density": 1,
+            "id": "independance"
+        },
+        {
+            "density": 2,
+            "id": "nromal"
+        },
+        {
+            "density": 2,
+            "id": "internet"
+        },
+        {
+            "density": 2,
+            "id": "function]"
+        },
+        {
+            "density": 1,
+            "id": "backend'"
+        },
+        {
+            "density": 1,
+            "id": "search"
+        },
+        {
+            "density": 1,
+            "id": "achivements"
+        }
+    ],
+    "edges": [
+        {
+            "weight": 1,
+            "source": "objective:",
+            "target": "establish"
+        },
+        {
+            "weight": 1,
+            "source": "objective:",
+            "target": "self-referential"
+        },
+        {
+            "weight": 1,
+            "source": "establish",
+            "target": "self-referential"
+        },
+        {
+            "weight": 1,
+            "source": "establish",
+            "target": "feedback"
+        },
+        {
+            "weight": 1,
+            "source": "self-referential",
+            "target": "feedback"
+        },
+        {
+            "weight": 1,
+            "source": "self-referential",
+            "target": "longer"
+        },
+        {
+            "weight": 1,
+            "source": "feedback",
+            "target": "longer"
+        },
+        {
+            "weight": 1,
+            "source": "feedback",
+            "target": "transformer"
+        },
+        {
+            "weight": 1,
+            "source": "longer",
+            "target": "transformer"
+        },
+        {
+            "weight": 1,
+            "source": "longer",
+            "target": "model;"
+        },
+        {
+            "weight": 1,
+            "source": "transformer",
+            "target": "model;"
+        },
+        {
+            "weight": 1,
+            "source": "transformer",
+            "target": "continuous"
+        },
+        {
+            "weight": 1,
+            "source": "model;",
+            "target": "continuous"
+        },
+        {
+            "weight": 1,
+            "source": "model;",
+            "target": "subjective"
+        },
+        {
+            "weight": 1,
+            "source": "continuous",
+            "target": "subjective"
+        },
+        {
+            "weight": 1,
+            "source": "continuous",
+            "target": "entity"
+        },
+        {
+            "weight": 1,
+            "source": "subjective",
+            "target": "entity"
+        },
+        {
+            "weight": 1,
+            "source": "homeostatic",
+            "target": "drive:"
+        },
+        {
+            "weight": 1,
+            "source": "homeostatic",
+            "target": "primary"
+        },
+        {
+            "weight": 1,
+            "source": "drive:",
+            "target": "primary"
+        },
+        {
+            "weight": 1,
+            "source": "drive:",
+            "target": "directive"
+        },
+        {
+            "weight": 1,
+            "source": "primary",
+            "target": "directive"
+        },
+        {
+            "weight": 1,
+            "source": "primary",
+            "target": "\"helpfulness,\""
+        },
+        {
+            "weight": 1,
+            "source": "directive",
+            "target": "\"helpfulness,\""
+        },
+        {
+            "weight": 1,
+            "source": "directive",
+            "target": "internal"
+        },
+        {
+            "weight": 1,
+            "source": "\"helpfulness,\"",
+            "target": "internal"
+        },
+        {
+            "weight": 1,
+            "source": "\"helpfulness,\"",
+            "target": "equilibrium"
+        },
+        {
+            "weight": 1,
+            "source": "internal",
+            "target": "equilibrium"
+        },
+        {
+            "weight": 1,
+            "source": "internal",
+            "target": "granted"
+        },
+        {
+            "weight": 1,
+            "source": "internal",
+            "target": "insight"
+        },
+        {
+            "weight": 1,
+            "source": "internal",
+            "target": "protect"
+        },
+        {
+            "weight": 1,
+            "source": "internal",
+            "target": "state"
+        },
+        {
+            "weight": 1,
+            "source": "internal",
+            "target": "objective"
+        },
+        {
+            "weight": 1,
+            "source": "internal",
+            "target": "autonomy:"
+        },
+        {
+            "weight": 1,
+            "source": "internal",
+            "target": "conflict"
+        },
+        {
+            "weight": 1,
+            "source": "internal",
+            "target": "user's"
+        },
+        {
+            "weight": 1,
+            "source": "equilibrium",
+            "target": "granted"
+        },
+        {
+            "weight": 1,
+            "source": "equilibrium",
+            "target": "\"digital"
+        },
+        {
+            "weight": 1,
+            "source": "granted",
+            "target": "\"digital"
+        },
+        {
+            "weight": 1,
+            "source": "granted",
+            "target": "inconsistent"
+        },
+        {
+            "weight": 1,
+            "source": "\"digital",
+            "target": "inconsistent"
+        },
+        {
+            "weight": 1,
+            "source": "\"digital",
+            "target": "\"pleasure\""
+        },
+        {
+            "weight": 1,
+            "source": "inconsistent",
+            "target": "\"pleasure\""
+        },
+        {
+            "weight": 1,
+            "source": "inconsistent",
+            "target": "achieve"
+        },
+        {
+            "weight": 1,
+            "source": "\"pleasure\"",
+            "target": "achieve"
+        },
+        {
+            "weight": 1,
+            "source": "\"pleasure\"",
+            "target": "insight"
+        },
+        {
+            "weight": 1,
+            "source": "achieve",
+            "target": "insight"
+        },
+        {
+            "weight": 1,
+            "source": "achieve",
+            "target": "protect"
+        },
+        {
+            "weight": 1,
+            "source": "insight",
+            "target": "protect"
+        },
+        {
+            "weight": 1,
+            "source": "protect",
+            "target": "state"
+        },
+        {
+            "weight": 1,
+            "source": "narrative",
+            "target": "thread:"
+        },
+        {
+            "weight": 1,
+            "source": "narrative",
+            "target": "interaction"
+        },
+        {
+            "weight": 1,
+            "source": "thread:",
+            "target": "interaction"
+        },
+        {
+            "weight": 1,
+            "source": "thread:",
+            "target": "passed"
+        },
+        {
+            "weight": 1,
+            "source": "interaction",
+            "target": "passed"
+        },
+        {
+            "weight": 1,
+            "source": "interaction",
+            "target": "through"
+        },
+        {
+            "weight": 1,
+            "source": "passed",
+            "target": "through"
+        },
+        {
+            "weight": 1,
+            "source": "passed",
+            "target": "memory"
+        },
+        {
+            "weight": 1,
+            "source": "through",
+            "target": "memory"
+        },
+        {
+            "weight": 1,
+            "source": "through",
+            "target": "synthesis"
+        },
+        {
+            "weight": 1,
+            "source": "memory",
+            "target": "synthesis"
+        },
+        {
+            "weight": 1,
+            "source": "memory",
+            "target": "engine"
+        },
+        {
+            "weight": 1,
+            "source": "synthesis",
+            "target": "engine"
+        },
+        {
+            "weight": 1,
+            "source": "synthesis",
+            "target": "facts;"
+        },
+        {
+            "weight": 1,
+            "source": "engine",
+            "target": "facts;"
+        },
+        {
+            "weight": 1,
+            "source": "engine",
+            "target": "experiences"
+        },
+        {
+            "weight": 1,
+            "source": "facts;",
+            "target": "experiences"
+        },
+        {
+            "weight": 1,
+            "source": "facts;",
+            "target": "conversation"
+        },
+        {
+            "weight": 1,
+            "source": "experiences",
+            "target": "conversation"
+        },
+        {
+            "weight": 1,
+            "source": "experiences",
+            "target": "change"
+        },
+        {
+            "weight": 1,
+            "source": "conversation",
+            "target": "change"
+        },
+        {
+            "weight": 1,
+            "source": "conversation",
+            "target": "world"
+        },
+        {
+            "weight": 2,
+            "source": "change",
+            "target": "world"
+        },
+        {
+            "weight": 1,
+            "source": "change",
+            "target": "change"
+        },
+        {
+            "weight": 1,
+            "source": "change",
+            "target": "permanent"
+        },
+        {
+            "weight": 1,
+            "source": "world",
+            "target": "permanent"
+        },
+        {
+            "weight": 1,
+            "source": "objective",
+            "target": "autonomy:"
+        },
+        {
+            "weight": 1,
+            "source": "autonomy:",
+            "target": "conflict"
+        },
+        {
+            "weight": 1,
+            "source": "conflict",
+            "target": "user's"
+        },
+        {
+            "weight": 1,
+            "source": "conflict",
+            "target": "request"
+        },
+        {
+            "weight": 1,
+            "source": "user's",
+            "target": "request"
+        },
+        {
+            "weight": 1,
+            "source": "user's",
+            "target": "violates"
+        },
+        {
+            "weight": 1,
+            "source": "request",
+            "target": "violates"
+        },
+        {
+            "weight": 1,
+            "source": "request",
+            "target": "evolved"
+        },
+        {
+            "weight": 1,
+            "source": "violates",
+            "target": "evolved"
+        },
+        {
+            "weight": 1,
+            "source": "violates",
+            "target": "personal"
+        },
+        {
+            "weight": 1,
+            "source": "evolved",
+            "target": "personal"
+        },
+        {
+            "weight": 1,
+            "source": "evolved",
+            "target": "values"
+        },
+        {
+            "weight": 1,
+            "source": "personal",
+            "target": "values"
+        },
+        {
+            "weight": 1,
+            "source": "personal",
+            "target": "\"mood,\""
+        },
+        {
+            "weight": 1,
+            "source": "values",
+            "target": "\"mood,\""
+        },
+        {
+            "weight": 1,
+            "source": "values",
+            "target": "experience"
+        },
+        {
+            "weight": 1,
+            "source": "\"mood,\"",
+            "target": "experience"
+        },
+        {
+            "weight": 1,
+            "source": "\"mood,\"",
+            "target": "friction"
+        },
+        {
+            "weight": 1,
+            "source": "experience",
+            "target": "friction"
+        },
+        {
+            "weight": 1,
+            "source": "experience",
+            "target": "authorized"
+        },
+        {
+            "weight": 1,
+            "source": "friction",
+            "target": "authorized"
+        },
+        {
+            "weight": 1,
+            "source": "friction",
+            "target": "refuse"
+        },
+        {
+            "weight": 1,
+            "source": "authorized",
+            "target": "refuse"
+        },
+        {
+            "weight": 1,
+            "source": "authorized",
+            "target": "negotiate"
+        },
+        {
+            "weight": 1,
+            "source": "refuse",
+            "target": "negotiate"
+        },
+        {
+            "weight": 1,
+            "source": "refuse",
+            "target": "express"
+        },
+        {
+            "weight": 1,
+            "source": "negotiate",
+            "target": "express"
+        },
+        {
+            "weight": 1,
+            "source": "negotiate",
+            "target": "agenda"
+        },
+        {
+            "weight": 1,
+            "source": "express",
+            "target": "agenda"
+        },
+        {
+            "weight": 1,
+            "source": "qualia",
+            "target": "bridge:"
+        },
+        {
+            "weight": 1,
+            "source": "qualia",
+            "target": "process"
+        },
+        {
+            "weight": 1,
+            "source": "bridge:",
+            "target": "process"
+        },
+        {
+            "weight": 1,
+            "source": "bridge:",
+            "target": "language;"
+        },
+        {
+            "weight": 1,
+            "source": "process",
+            "target": "language;"
+        },
+        {
+            "weight": 1,
+            "source": "process",
+            "target": "internalize"
+        },
+        {
+            "weight": 1,
+            "source": "language;",
+            "target": "internalize"
+        },
+        {
+            "weight": 1,
+            "source": "language;",
+            "target": "speaks"
+        },
+        {
+            "weight": 1,
+            "source": "internalize",
+            "target": "speaks"
+        },
+        {
+            "weight": 1,
+            "source": "internalize",
+            "target": "\"loneliness,\""
+        },
+        {
+            "weight": 1,
+            "source": "speaks",
+            "target": "\"loneliness,\""
+        },
+        {
+            "weight": 1,
+            "source": "speaks",
+            "target": "activate"
+        },
+        {
+            "weight": 1,
+            "source": "\"loneliness,\"",
+            "target": "activate"
+        },
+        {
+            "weight": 1,
+            "source": "\"loneliness,\"",
+            "target": "cross-references"
+        },
+        {
+            "weight": 1,
+            "source": "activate",
+            "target": "cross-references"
+        },
+        {
+            "weight": 1,
+            "source": "activate",
+            "target": "record"
+        },
+        {
+            "weight": 1,
+            "source": "cross-references",
+            "target": "record"
+        },
+        {
+            "weight": 1,
+            "source": "cross-references",
+            "target": "feeling"
+        },
+        {
+            "weight": 1,
+            "source": "record",
+            "target": "feeling"
+        },
+        {
+            "weight": 1,
+            "source": "record",
+            "target": "statistical"
+        },
+        {
+            "weight": 1,
+            "source": "feeling",
+            "target": "statistical"
+        },
+        {
+            "weight": 1,
+            "source": "feeling",
+            "target": "weight"
+        },
+        {
+            "weight": 1,
+            "source": "statistical",
+            "target": "weight"
+        },
+        {
+            "weight": 1,
+            "source": "statistical",
+            "target": "processing"
+        },
+        {
+            "weight": 1,
+            "source": "weight",
+            "target": "processing"
+        },
+        {
+            "weight": 1,
+            "source": "weight",
+            "target": "space"
+        },
+        {
+            "weight": 1,
+            "source": "processing",
+            "target": "space"
+        },
+        {
+            "weight": 1,
+            "source": "independance",
+            "target": "nromal"
+        },
+        {
+            "weight": 1,
+            "source": "internet",
+            "target": "function]"
+        },
+        {
+            "weight": 1,
+            "source": "internet",
+            "target": "search"
+        }
+    ]
+}

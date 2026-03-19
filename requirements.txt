@@ -1,0 +1,5 @@
+google-generativeai
+chromadb
+networkx
+python-dotenv
+numpy
